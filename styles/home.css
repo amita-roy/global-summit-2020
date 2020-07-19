@@ -1,5 +1,33 @@
+:root {
+  --primary-color: #ec5242;
+  --black-color: #272a31;
+  --light-black-color: #444;
+  --light-gray: #d3d3d3;
+  --body: #f7f7f7;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body);
+}
+
+header {
+  background-image: url(../assets/images/header_background.jpg);
+  background-position: 40% 65%;
+  height: 146px;
+}
+
+nav {
+  height: 100%;
+  background-color: rgba(247, 247, 247, 0.8);
+}
+
+.menu-bar {
+  font-size: 2.7rem;
+  color: var(--light-black-color);
 }
