@@ -6,6 +6,7 @@
   --light-black-color: #444;
   --dark-gray: #666565;
   --light-gray: #d3d3d3;
+  --white-color: #fff;
   --body: #f7f7f7;
 
   /*
@@ -112,6 +113,47 @@ nav {
   flex: 1;
 }
 
+.program ul {
+  list-style: none;
+}
+
+.program li {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.program li:hover {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.program-detail-heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.join-summit-btn {
+  border: none;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  color: var(--white-color);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-color),
+    var(--primary-dark-color)
+  );
+  max-width: 400px;
+  box-shadow: 0 3px 3px 3px rgba(165, 165, 165, 0.5);
+}
+
+.join-summit-btn:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-dark-color) 20%,
+    #6b231b
+  );
+}
+
 @media only screen and (max-width: 360px) {
   h1 {
     font-size: 10vw;
@@ -129,20 +171,54 @@ nav {
     font-size: 8vw;
   }
 
-  .conference-img:hover {
-    opacity: 0.6;
+  .main-program h4 {
+    font-size: 7vw;
   }
 
   .img-and-title h5 {
-    bottom: 0;
-    color: #fff;
-    background-color: rgba(236, 82, 66, 0.7);
     font-size: 6vw;
+  }
+
+  .program-list li {
+    font-size: 5vw;
+    cursor: pointer;
+  }
+
+  .program-list li:hover {
+    color: var(--primary-color);
+  }
+
+  .program-detail-heading {
+    font-weight: 700;
+    font-size: 7vw;
+  }
+
+  .join-summit-btn {
+    font-size: 5vw;
   }
 }
 
 @media only screen and (max-width: 768px) {
   header {
     height: 146px;
+  }
+
+  .conference-img:hover {
+    opacity: 0.6;
+  }
+
+  .img-and-title h5 {
+    bottom: 0;
+    color: var(--white-color);
+    background-color: rgba(236, 82, 66, 0.8);
+    width: 100%;
+  }
+
+  .program-detail {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 6px;
+    outline: 4px double var(--body);
+    outline-offset: -12px;
   }
 }
