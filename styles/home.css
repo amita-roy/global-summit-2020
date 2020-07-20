@@ -89,11 +89,12 @@ nav {
 .summit-date {
   font-weight: 100;
   font-size: 2.8rem;
+  color: var(--light-black-color);
 }
 
 .right-aligned-text {
   top: 550px;
-  right: -316px;
+  right: -249px;
   transform: rotate(90deg);
   opacity: 0.4;
 }
@@ -103,7 +104,7 @@ nav {
   letter-spacing: 10px;
 }
 
-.main-program h4 {
+.section-heading {
   color: var(--black-color);
   border-bottom: 4px double var(--primary-color);
   display: inline-block;
@@ -154,6 +155,41 @@ nav {
   );
 }
 
+/* .speaker {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+} */
+
+.speaker-img-wraper,
+.img-frame {
+  max-width: 110px;
+}
+
+.speaker-image {
+  padding-left: 21px;
+}
+
+.img-frame {
+  top: -27px;
+  left: 0;
+}
+
+.speaker-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.speaker-title {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+.speaker-description {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
 @media only screen and (max-width: 360px) {
   h1 {
     font-size: 10vw;
@@ -171,7 +207,7 @@ nav {
     font-size: 8vw;
   }
 
-  .main-program h4 {
+  .section-heading {
     font-size: 7vw;
   }
 
