@@ -43,22 +43,6 @@ h3 {
   color: transparent;
 }
 
-.tag-line {
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  color: var(--primary-light-color);
-  font-weight: 300;
-}
-
-.globe {
-  cursor: pointer;
-}
-
-.globe:hover {
-  transform: rotate(360deg);
-  transition: transform 2s ease;
-}
-
 header {
   background-image: url(../assets/images/header_background.jpg);
   opacity: 0.8;
@@ -73,7 +57,23 @@ nav {
 
 .menu-bar {
   font-size: 2.7rem;
-  color: var(--light-black-color);
+  color: var(--black-color);
+}
+
+.tag-line {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: var(--primary-light-color);
+  font-weight: 300;
+}
+
+.globe {
+  cursor: pointer;
+}
+
+.globe:hover {
+  transform: rotate(360deg);
+  transition: transform 2s ease;
 }
 
 .summit-description {
@@ -127,6 +127,17 @@ nav {
 
   .summit-date {
     font-size: 8vw;
+  }
+
+  .conference-img:hover {
+    opacity: 0.6;
+  }
+
+  .img-and-title h5 {
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(236, 82, 66, 0.7);
+    font-size: 6vw;
   }
 }
 
