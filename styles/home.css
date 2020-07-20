@@ -1,9 +1,16 @@
 :root {
   --primary-color: #ec5242;
+  --primary-light-color: #f86c5d;
+  --primary-dark-color: #9b3429;
   --black-color: #272a31;
   --light-black-color: #444;
   --light-gray: #d3d3d3;
   --body: #f7f7f7;
+
+  /*
+  --large-font-size: 3rem;
+  --medium-font-size: 1.8rem;
+  --small-font-size: 1.5rem; */
 }
 
 * {
@@ -14,12 +21,48 @@
 
 body {
   background-color: var(--body);
+  font-family: "Lato", sans-serif;
+}
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
+}
+
+h1,
+h4 {
+  font-family: Cocogoose, Arial, Helvetica, sans-serif;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--primary-dark-color) 10%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tag-line {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: var(--primary-light-color);
+  font-weight: 300;
+}
+
+.globe {
+  cursor: pointer;
+}
+
+.globe:hover {
+  transform: rotate(360deg);
+  transition: transform 2s ease;
 }
 
 header {
   background-image: url(../assets/images/header_background.jpg);
+  opacity: 0.8;
   background-position: 40% 65%;
-  height: 146px;
+  height: 300px;
 }
 
 nav {
@@ -30,4 +73,43 @@ nav {
 .menu-bar {
   font-size: 2.7rem;
   color: var(--light-black-color);
+}
+
+.summit-description {
+  line-height: 2rem;
+  max-width: 800px;
+  border: 4px double var(--primary-light-color);
+  border-radius: 6px;
+}
+
+.right-aligned-text {
+  top: 550px;
+  right: -316px;
+  transform: rotate(90deg);
+  opacity: 0.4;
+}
+
+.right-aligned-text h4 {
+  font-size: 3vw;
+  letter-spacing: 10px;
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 10vw;
+  }
+
+  .tag-line {
+    font-size: 6vw;
+  }
+
+  .summit-description {
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 146px;
+  }
 }

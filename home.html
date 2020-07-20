@@ -14,14 +14,48 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/home.css" />
   </head>
   <body>
-    <header class="">
+    <header class="position-relative">
       <nav class="px-4 py-3">
-        <span><i class="fas fa-bars menu-bar"></i></span>
+        <span class="d-block d-md-none"
+          ><i class="fas fa-bars menu-bar"></i
+        ></span>
       </nav>
     </header>
+    <main class="container-fluid px-3 py-3">
+      <span class="tag-line d-flex align-items-center"
+        >"World is changing" <i class="fas fa-globe-europe ml-2 globe"></i
+      ></span>
+      <h1 class="mt-2 d-flex flex-column flex-sm-row">
+        Global Summit <span class="ml-sm-3">2020</span>
+      </h1>
+      <p class="summit-description d-md-none px-3 py-2 mt-3">
+        The Intelligent Community Forum (ICF) studies and promotes the best
+        practices of the world’s Intelligent Communities as they adapt to the
+        demands and seize the opportunities presented by the digital age. <br />
+        <a href="#">More About Summit ...</a>
+      </p>
+      <p class="summit-description d-none d-md-block px-3 py-2 mt-3">
+        The Intelligent Community Forum (ICF) studies and promotes the best
+        practices of the world’s Intelligent Communities as they adapt to the
+        demands and seize the opportunities presented by the digital age. To
+        help communities grow their economies, societies and cultures, ICF
+        conducts and publishes research, presents workshops, hosts conferences
+        and produces a high-profile international awards program. Over the last
+        20 years, ICF has become an international movement that attracts the
+        attention of global leaders, thinkers and media observers.
+      </p>
+      <div class="right-aligned-text position-fixed d-none d-lg-block">
+        <h4>Global Summit 2020</h4>
+      </div>
+    </main>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
