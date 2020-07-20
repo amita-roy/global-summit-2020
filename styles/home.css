@@ -97,9 +97,19 @@ nav {
   opacity: 0.4;
 }
 
-.right-aligned-text h4 {
+.right-aligned-text h3 {
   font-size: 3vw;
   letter-spacing: 10px;
+}
+
+.main-program h4 {
+  color: var(--black-color);
+  border-bottom: 4px double var(--primary-color);
+  display: inline-block;
+}
+
+.program {
+  flex: 1;
 }
 
 @media only screen and (max-width: 360px) {
