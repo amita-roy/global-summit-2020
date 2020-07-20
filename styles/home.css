@@ -4,6 +4,7 @@
   --primary-dark-color: #9b3429;
   --black-color: #272a31;
   --light-black-color: #444;
+  --dark-gray: #666565;
   --light-gray: #d3d3d3;
   --body: #f7f7f7;
 
@@ -30,7 +31,7 @@ body {
 }
 
 h1,
-h4 {
+h3 {
   font-family: Cocogoose, Arial, Helvetica, sans-serif;
   background: repeating-linear-gradient(
     45deg,
@@ -80,6 +81,13 @@ nav {
   max-width: 800px;
   border: 4px double var(--primary-light-color);
   border-radius: 6px;
+  color: var(--dark-gray);
+  font-weight: 300;
+}
+
+.summit-date {
+  font-weight: 100;
+  font-size: 2.8rem;
 }
 
 .right-aligned-text {
@@ -104,7 +112,11 @@ nav {
   }
 
   .summit-description {
-    font-size: 6vw;
+    font-size: 5vw;
+  }
+
+  .summit-date {
+    font-size: 8vw;
   }
 }
 
