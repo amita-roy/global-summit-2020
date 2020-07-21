@@ -1,5 +1,55 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.about-summit {
+  margin-bottom: 50px;
+  margin-top: 30px;
+  max-width: 350px;
+}
+
+.about-summit strong {
+  color: var(--primary-color);
+}
+
+.ICF-logo-image {
+  margin-bottom: 100px;
+}
+
+.past-summits {
+  margin-bottom: 100px;
+}
+
+.video-player {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 24.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.summit-content {
+  margin-left: 3rem;
+}
+
+@media only screen and (max-width: 360px) {
+  .past-summits {
+    margin-bottom: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-summit p {
+    font-size: 3.5vw;
+  }
+
+  .video-player {
+    height: 28vh;
+  }
 }

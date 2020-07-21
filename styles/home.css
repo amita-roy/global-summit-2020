@@ -105,18 +105,6 @@ main,
   color: var(--light-black-color);
 }
 
-.right-aligned-text {
-  top: 550px;
-  right: -249px;
-  transform: rotate(90deg);
-  opacity: 0.4;
-}
-
-.right-aligned-text h3 {
-  font-size: 3vw;
-  letter-spacing: 10px;
-}
-
 .section-heading {
   color: var(--black-color);
   border-bottom: 4px double var(--primary-color);
@@ -225,48 +213,9 @@ main,
   font-size: 1rem;
 }
 
-.footer-details {
-  margin-top: 60px;
-  padding: 15px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.footer-logo {
-  max-width: 100px;
-  margin-right: 2rem;
-  height: auto;
-}
-
-.footer-content p {
-  font-size: 1.8rem;
-  color: var(--primary-color);
-}
-
-.footer-content small {
-  color: var(--dark-gray);
-  letter-spacing: 1.5px;
-}
-
 @media only screen and (max-width: 360px) {
-  h1 {
-    font-size: 10vw;
-  }
-
-  .tag-line {
-    font-size: 6vw;
-  }
-
-  .summit-description {
-    font-size: 5vw;
-  }
-
   .summit-date {
     font-size: 8vw;
-  }
-
-  .section-heading {
-    font-size: 7vw;
   }
 
   .img-and-title h5 {
@@ -295,10 +244,6 @@ main,
 }
 
 @media only screen and (max-width: 768px) {
-  header {
-    height: 146px;
-  }
-
   .conference-img:hover {
     opacity: 0.6;
   }
@@ -316,9 +261,5 @@ main,
     border-radius: 6px;
     outline: 4px double var(--body);
     outline-offset: -12px;
-  }
-
-  .footer-content p {
-    font-size: 4vw;
   }
 }
