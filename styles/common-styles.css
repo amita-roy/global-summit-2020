@@ -28,7 +28,8 @@ body {
 
 h1,
 h3,
-.footer-content p {
+.footer-content p,
+.summit-year {
   font-family: Cocogoose, Arial, Helvetica, sans-serif;
 }
 
@@ -117,7 +118,6 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: var(--body);
-  margin-top: 60px;
 }
 
 .footer-details {

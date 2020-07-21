@@ -9,11 +9,11 @@
 }
 
 .ICF-logo-image {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .past-summits {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .video-player {
@@ -38,9 +38,41 @@
   margin-left: 3rem;
 }
 
+.summit-2017 {
+  margin-top: 40px;
+}
+
+.summit-detail {
+  top: 0;
+  left: 0;
+  color: var(--white-color);
+  bottom: 0;
+  right: 0;
+  background-color: rgba(236, 83, 66, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summit-year {
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.summit-year,
+.summit-location {
+  font-size: 1.8rem;
+}
+
+.sponsors {
+  margin-bottom: 60px;
+}
+
 @media only screen and (max-width: 360px) {
-  .past-summits {
-    margin-bottom: 300px;
+  .summit-year,
+  .summit-location {
+    font-size: 5vw;
   }
 }
 
@@ -51,5 +83,10 @@
 
   .video-player {
     height: 28vh;
+  }
+
+  .past-summit {
+    flex: 1;
+    margin-bottom: 30px;
   }
 }

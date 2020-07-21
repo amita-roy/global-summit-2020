@@ -100,10 +100,12 @@
   background-color: var(--body);
   color: var(--light-black-color);
   margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .more-link i {
   font-size: 1rem;
+  color: var(--primary-color);
 }
 
 @media only screen and (max-width: 360px) {

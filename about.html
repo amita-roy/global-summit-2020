@@ -20,9 +20,9 @@
   <body>
     <header class="position-relative">
       <nav class="px-4 py-3">
-        <span class="d-block d-md-none"
+        <a href="#" class="d-block d-md-none"
           ><i class="fas fa-bars menu-bar"></i
-        ></span>
+        ></a>
       </nav>
     </header>
 
@@ -77,8 +77,8 @@
         />
       </div>
       <section class="past-summits">
-        <h4 class="pb-2 section-heading">Featured Speakers</h4>
-        <div class="2017-summit d-flex justify-content-between">
+        <h4 class="pb-2 section-heading">Past Global Summits</h4>
+        <div class="summit-2017 d-flex justify-content-between">
           <div class="video-player">
             <iframe
               class="responsive-iframe"
@@ -96,6 +96,84 @@
             </p>
             <p></p>
           </div>
+        </div>
+        <div class="past-summits mt-5 d-flex flex-column">
+          <div class="past-summit position-relative">
+            <a href="#">
+              <div class="summit-img">
+                <img
+                  src="./assets/images/summit-2019.jpg"
+                  alt="summit for 2019"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="summit-detail position-absolute">
+                <p class="summit-year">2019</p>
+                <p class="summit-location">ICF Global Summit in New York</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="past-summit position-relative">
+            <a href="#">
+              <div class="summit-img">
+                <img
+                  src="./assets/images/summit-2018.jpg"
+                  alt="summit for 2018"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="summit-detail position-absolute">
+                <p class="summit-year">2018</p>
+                <p class="summit-location">ICF Global Summit in London</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="past-summit d-none d-md-block position-relative">
+            <a href="#">
+              <div class="summit-img">
+                <img
+                  src="./assets/images/summit-2017.jpg"
+                  alt="summit for 2017"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="summit-detail position-absolute">
+                <p class="summit-year">2017</p>
+                <p class="summit-location">ICF Global Summit in New York</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="past-summit d-none d-md-block position-relative">
+            <a href="#">
+              <div class="summit-img">
+                <img
+                  src="./assets/images/summit-2016.jpg"
+                  alt="summit for 2016"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="summit-detail position-absolute">
+                <p class="summit-year">2016</p>
+                <p class="summit-location">
+                  ICF Global Summit in Toronto
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sponsors">
+        <h4 class="pb-2 section-heading">Sponsors</h4>
+        <div class="sponsors-image mt-4">
+          <img
+            src="./assets/images/sponsors.png"
+            alt="sponsors"
+            class="img-fluid sponsors"
+          />
         </div>
       </section>
     </main>
