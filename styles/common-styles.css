@@ -28,7 +28,8 @@ body {
 
 h1,
 h3,
-.footer-content p,
+.footer-content .summit-name,
+.footer-dark-content .summit-name,
 .summit-year {
   font-family: Cocogoose, Arial, Helvetica, sans-serif;
 }
@@ -114,8 +115,6 @@ main,
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background-color: var(--body);
 }
@@ -132,14 +131,25 @@ footer {
   height: auto;
 }
 
-.footer-content p {
-  font-size: 1.8rem;
+.footer-content .summit-name {
   color: var(--primary-color);
 }
 
-.footer-content small {
-  color: var(--dark-gray);
+.footer-content .summit-name,
+.footer-dark-content .summit-name {
+  font-size: 1.8rem;
+}
+
+.footer-content small,
+.footer-dark-content small {
+  color: var(--light-gray);
   letter-spacing: 1.5px;
+}
+
+.footer-dark-content-description {
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 360px) {
@@ -158,6 +168,11 @@ footer {
   .section-heading {
     font-size: 7vw;
   }
+
+  .footer-dark-content-description,
+  .footer-dark-content small {
+    font-size: 4vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -165,7 +180,8 @@ footer {
     height: 146px;
   }
 
-  .footer-content p {
+  .footer-content .summit-name,
+  .footer-dark-content .summit-name {
     font-size: 4vw;
   }
 }
