@@ -71,8 +71,18 @@ a.add-to-cart {
   color: var(--white-color);
 }
 
+.meal-selection-btn {
+  background-color: var(--black-color);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 40px;
+}
+
 @media only screen and (max-width: 360px) {
-  .step {
+  .step,
+  .meal-selection-btn,
+  .list-group-item,
+  .add-to-cart {
     font-size: 5vw;
   }
 
