@@ -14,9 +14,128 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles/common-styles.css" />
     <link rel="stylesheet" href="styles/ticket.css" />
   </head>
   <body>
+    <header class="ticket-header position-relative">
+      <nav class="px-4 py-2">
+        <a href="#" class="d-block d-md-none"
+          ><i class="fas fa-bars menu-bar"></i
+        ></a>
+      </nav>
+    </header>
+    <main class="container-fluid px-3 py-3">
+      <div class="top-section mt-3">
+        <img src="./assets/images/ticket.svg" alt="" class="img-fluid" />
+        <h1 class="mt-3 text-center ticket-text">
+          TICKETS
+        </h1>
+      </div>
+
+      <div class="steps position-relative">
+        <p class="line-through1"></p>
+        <p class="line-through2 mt-1"></p>
+        <p class="step position-absolute">Step 1</p>
+      </div>
+
+      <div class="d-flex justify-content-end mt-5">
+        <p class="step-description">
+          <span class="mr-2"><i class="fas fa-circle circle-icon"></i></span>
+          Please select the day when you want to join the summit
+        </p>
+      </div>
+
+      <section class="tickets ticket-normal d-flex flex-column">
+        <h2 class="text-center">General</h2>
+        <div class="general-ticket d-flex flex-column flex-md-row">
+          <div class="card mr-md-3">
+            <h5 class="card-header">Day-1: OCT 21</h5>
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title">Price: $250</h5>
+              <p class="card-text">
+                Price included lunch
+              </p>
+              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
+            </div>
+          </div>
+          <div class="card mr-md-3">
+            <h5 class="card-header">Day-2: OCT 22</h5>
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title">Price: $250</h5>
+              <p class="card-text">
+                Price included lunch
+              </p>
+              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-header">Day-3: OCT 23</h5>
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title">Price: $250</h5>
+              <p class="card-text">
+                Price included lunch
+              </p>
+              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tickets ticket-student d-flex flex-column">
+        <h2>Student</h2>
+        <div class="student-ticket d-flex flex-column flex-md-row">
+          <div class="card mr-md-3">
+            <h5 class="card-header">Day-1: OCT 21</h5>
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title">Price: $100</h5>
+              <p class="card-text">
+                Price included lunch
+              </p>
+              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
+            </div>
+          </div>
+          <div class="card mr-md-3">
+            <h5 class="card-header">Day-2: OCT 22</h5>
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title">Price: $100</h5>
+              <p class="card-text">
+                Price included lunch
+              </p>
+              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-header">Day-3: OCT 23</h5>
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title">Price: $100</h5>
+              <p class="card-text">
+                Price included lunch
+              </p>
+              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="steps steps2 position-relative">
+        <p class="line-through1"></p>
+        <p class="line-through2 mt-1"></p>
+        <p class="step position-absolute">Step 2</p>
+      </div>
+      <div class="d-flex justify-content-end mt-5">
+        <p class="step-description">
+          <span class="mr-2"><i class="fas fa-circle circle-icon"></i></span>
+          Please select your lunch for the registered day. There will be no
+          further cost
+        </p>
+      </div>
+
+      <section class="lunch">
+        <h2 class="text-center">lunch</h2>
+        <div class="menu-list"></div>
+      </section>
+    </main>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

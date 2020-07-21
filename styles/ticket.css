@@ -1,5 +1,85 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.ticket-header {
+  height: 60px;
+}
+
+.steps {
+  margin-top: 40px;
+}
+
+.line-through1,
+.line-through2 {
+  max-width: 500px;
+  border-bottom: 4px double var(--primary-color);
+}
+
+.step {
+  display: inline-block;
+  color: var(--white-color);
+  border-radius: 100%;
+  padding: 1.5rem 0.8rem;
+  border: 5px solid var(--white-color);
+  background-color: var(--black-color);
+  top: -26px;
+  left: 40px;
+}
+
+.step-description {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border: 1px solid var(--light-gray);
+  border-radius: 25px;
+}
+
+.circle-icon {
+  color: var(--primary-color);
+}
+
+.tickets {
+  margin-top: 50px;
+}
+
+.tickets h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.ticket-student {
+  margin-bottom: 80px;
+}
+
+.card {
+  flex: 1;
+}
+
+a.add-to-cart {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.add-to-cart:active,
+.add-to-cart:focus {
+  color: var(--white-color);
+}
+
+@media only screen and (max-width: 360px) {
+  .step {
+    font-size: 5vw;
+  }
+
+  .tickets h2 {
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  .step-description,
+  .circle-icon {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    margin-top: 20px;
+  }
 }
