@@ -8,11 +8,6 @@
   --light-gray: #d3d3d3;
   --white-color: #fff;
   --body: #f7f7f7;
-
-  /*
-    --large-font-size: 3rem;
-    --medium-font-size: 1.8rem;
-    --small-font-size: 1.5rem; */
 }
 
 * {
@@ -109,6 +104,12 @@ main,
 .right-aligned-text h3 {
   font-size: 3vw;
   letter-spacing: 10px;
+}
+
+.section-heading {
+  color: var(--black-color);
+  border-bottom: 4px double var(--primary-color);
+  display: inline-block;
 }
 
 footer {
