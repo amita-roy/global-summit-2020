@@ -233,7 +233,10 @@ ul {
   font-size: 1.8rem;
 }
 
-.footer-content small,
+.footer-content small {
+  color: var(--light-black-color);
+}
+
 .footer-dark-content small {
   color: var(--light-gray);
   letter-spacing: 1.5px;
