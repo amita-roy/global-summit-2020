@@ -9,7 +9,7 @@ I was given [this design](https://www.behance.net/gallery/29845175/CC-Global-Sum
 
 ## Video Presentation
 
-Watch my video [presentation]() of the project to hear more about this assignment and how I approached it.
+Watch my video [presentation](https://www.loom.com/share/b500106067f94b6fb236ab3ccd2e8853) of the project to hear more about this assignment and how I approached it.
 
 ## Built With
 
@@ -58,10 +58,6 @@ See the project in action by visiting the [live demo](https://wonderful-lichterm
 ## Author
 
 👤 **Amita Roy**
-
-> Hello, World! 
-
-> My name's Joe. Hire me!
 
 - Github: [@Amita-Roy](https://github.com/Amita-Roy)
 - Twitter: [@AmitaRoy14](https://twitter.com/AmitaRoy14)
