@@ -2,30 +2,12 @@
   height: 60px;
 }
 
-.steps,
-.meal-section,
-.meal-selection-btn {
+.ticket-page-heading {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: var(--light-black-color);
+  font-size: 1.8rem;
+  text-align: center;
   margin-top: 40px;
-}
-
-.line-through1,
-.line-through2 {
-  max-width: 500px;
-  border-bottom: 4px double var(--primary-color);
-}
-
-.step {
-  display: inline-block;
-  border-radius: 100%;
-  padding: 1.5rem 0.8rem;
-  border: 10px solid var(--body);
-  top: -36px;
-  left: 40px;
-}
-
-.step,
-.meal-selection-btn {
-  background-color: var(--black-color);
 }
 
 .step-description {
@@ -39,56 +21,94 @@
   color: var(--primary-color);
 }
 
-.tickets {
-  margin-top: 50px;
+.ticket-table {
+  height: 250px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-image: repeating-linear-gradient(
+    135deg,
+    red,
+    red 1%,
+    white 1%,
+    white 2%,
+    rgb(0, 0, 109) 2%,
+    rgb(0, 0, 109) 3%,
+    white 3%,
+    white 4%
+  );
+  padding: 7px;
+  position: relative;
 }
 
-.tickets h2 {
-  font-size: 2rem;
-  color: var(--primary-color);
+.ticket-table::after {
+  content: " ";
+  width: 50%;
+  top: 76%;
+  left: 25%;
+  height: 20%;
+  position: absolute;
+  box-shadow: 3px 14px 25px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 100%;
+  z-index: -1;
 }
 
-.ticket-student {
-  margin-bottom: 80px;
-}
-
-.card {
-  flex: 1;
-}
-
-a.add-to-cart,
-.list-group-item {
-  background-color: var(--primary-color);
-}
-
-.step,
-.list-group-item,
-a.add-to-cart,
-.add-to-cart:active,
-.add-to-cart:focus {
-  color: var(--white-color);
-}
-
-.meal-section {
-  margin-bottom: 40px;
-}
-
-.meal-selection-btn {
+.ticket-selection {
+  height: 100%;
   width: 100%;
-  max-width: 400px;
-  border-radius: 6px;
+  background-color: var(--body);
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 3fr 2fr;
+  z-index: 999;
+}
+
+.column-1,
+.column-2,
+.column-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr) repeat(2, 2fr);
+}
+
+.column-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.col3-left {
+  border-right: 1px solid lightgrey;
+}
+
+.ticket-selection p {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.column-3 .col3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col3-left,
+.col3-right {
+  display: grid;
+  grid-template-rows: 1fr repeat(2, 2fr);
 }
 
 @media only screen and (max-width: 360px) {
-  .step,
   .meal-selection-btn,
-  .list-group-item,
-  .add-to-cart {
+  .list-group-item {
     font-size: 5vw;
   }
 
-  .tickets h2 {
-    font-size: 8vw;
+  .ticket-selection p {
+    font-size: 5vw;
   }
 }
 
@@ -97,10 +117,8 @@ a.add-to-cart,
   .circle-icon {
     font-size: 4vw;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .card {
-    margin-top: 20px;
+  .ticket-selection p {
+    font-size: 3.4vw;
   }
 }

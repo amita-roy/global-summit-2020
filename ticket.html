@@ -111,181 +111,81 @@
       </div>
     </header>
     <main class="container-fluid px-3 py-5">
-      <div class="top-section mt-5 text-center">
-        <img src="./assets/images/ticket.svg" alt="" class="img-fluid" />
-        <h1 class="mt-3 text-center ticket-text">
-          TICKETS
-        </h1>
-      </div>
+      <section class="tickets">
+        <h1 class="ticket-page-heading pb-3">Select Ticket</h1>
 
-      <div class="steps position-relative">
-        <p class="line-through1"></p>
-        <p class="line-through2 mt-1"></p>
-        <p class="step position-absolute">Step 1</p>
-      </div>
+        <div class="text-center mt-3">
+          <p class="step-description">
+            <span class="mr-2"><i class="fas fa-circle circle-icon"></i></span>
+            <span class="mr-2">STEP 1</span>
+            Please select the day when you want to join the summit
+          </p>
+        </div>
 
-      <div class="d-flex justify-content-end mt-5">
-        <p class="step-description">
-          <span class="mr-2"><i class="fas fa-circle circle-icon"></i></span>
-          Please select the day when you want to join the summit
-        </p>
-      </div>
-
-      <section class="tickets ticket-normal d-flex flex-column">
-        <h2>General</h2>
-        <div class="general-ticket d-flex flex-column flex-md-row">
-          <div class="card mr-md-3">
-            <h5 class="card-header">Day-1: OCT 21</h5>
-            <div class="card-body bg-dark text-white">
-              <h5 class="card-title">Price: $250</h5>
-              <p class="card-text">
-                Price included lunch
-              </p>
-              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
+        <div class="ticket-table mt-5">
+          <div class="ticket-selection">
+            <div class="column-1 text-center">
+              <p>Ticket</p>
+              <p>Date</p>
+              <p>Normal</p>
+              <p>Student</p>
             </div>
-          </div>
-          <div class="card mr-md-3">
-            <h5 class="card-header">Day-2: OCT 22</h5>
-            <div class="card-body bg-dark text-white">
-              <h5 class="card-title">Price: $250</h5>
-              <p class="card-text">
-                Price included lunch
+            <div class="column-2">
+              <p>1-Day-Ticket</p>
+              <p>21.Oct</p>
+              <p class="d-flex flex-column">
+                $250 <input type="radio" class="mt-2" name="normal" />
               </p>
-              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
+              <p class="d-flex flex-column">
+                $100 <input type="radio" class="mt-2" name="for-student" />
+              </p>
             </div>
-          </div>
-          <div class="card">
-            <h5 class="card-header">Day-3: OCT 23</h5>
-            <div class="card-body bg-dark text-white">
-              <h5 class="card-title">Price: $250</h5>
-              <p class="card-text">
-                Price included lunch
+            <div class="column-3">
+              <p>3-Days-Ticket</p>
+              <div class="col3">
+                <div class="col3-left">
+                  <p>21.Oct</p>
+                  <p class="d-flex flex-column">
+                    $250 <input type="radio" class="mt-2" name="normal" />
+                  </p>
+                  <p class="d-flex flex-column">
+                    $100 <input type="radio" class="mt-2" name="for-student" />
+                  </p>
+                </div>
+                <div class="col3-right">
+                  <p>21-23</p>
+                  <p class="d-flex flex-column">
+                    $600 <input type="radio" class="mt-2" name="normal" />
+                  </p>
+                  <p class="d-flex flex-column">
+                    $250 <input type="radio" class="mt-2" name="for-student" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-4">
+              <p>Partners</p>
+              <p>21.Oct</p>
+              <p class="d-flex flex-column">
+                $0 <input type="radio" class="mt-2" name="normal" />
               </p>
-              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
+              <p class="d-flex flex-column">
+                $0 <input type="radio" class="mt-2" name="for-student" />
+              </p>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="tickets ticket-student d-flex flex-column">
-        <h2>Student</h2>
-        <div class="student-ticket d-flex flex-column flex-md-row">
-          <div class="card mr-md-3">
-            <h5 class="card-header">Day-1: OCT 21</h5>
-            <div class="card-body bg-dark text-white">
-              <h5 class="card-title">Price: $100</h5>
-              <p class="card-text">
-                Price included lunch
-              </p>
-              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
-            </div>
-          </div>
-          <div class="card mr-md-3">
-            <h5 class="card-header">Day-2: OCT 22</h5>
-            <div class="card-body bg-dark text-white">
-              <h5 class="card-title">Price: $100</h5>
-              <p class="card-text">
-                Price included lunch
-              </p>
-              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
-            </div>
-          </div>
-          <div class="card">
-            <h5 class="card-header">Day-3: OCT 23</h5>
-            <div class="card-body bg-dark text-white">
-              <h5 class="card-title">Price: $100</h5>
-              <p class="card-text">
-                Price included lunch
-              </p>
-              <a href="#" class="btn add-to-cart text-white">Add to cart</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="steps steps2 position-relative">
-        <p class="line-through1"></p>
-        <p class="line-through2 mt-1"></p>
-        <p class="step position-absolute">Step 2</p>
-      </div>
-      <div class="d-flex justify-content-end mt-5">
-        <p class="step-description">
-          <span class="mr-2"><i class="fas fa-circle circle-icon"></i></span>
-          Please select your lunch for the registered day. There will be no
-          further cost
-        </p>
-      </div>
 
       <section class="meal-section">
-        <h2 class="mb-4">Meal</h2>
-        <div class="menu-list d-flex flex-column flex-md-row">
-          <div class="card meal-card mr-md-3">
-            <div class="card-header">
-              Day-1: LUNCH
-            </div>
-            <ul class="list-group list-group-flush card-list">
-              <li class="list-group-item d-flex justify-content-between">
-                Vegetarian <span><input type="radio" name="food1"/></span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                Non-Vegeterian
-                <span><input type="radio" name="food1"/></span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                Vegan <span><input type="radio" name="food1" /></span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                Eggetarian <span><input type="radio" name="food1" /></span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card meal-card mr-md-3">
-            <div class="card-header">
-              Day-2: LUNCH
-            </div>
-            <ul class="list-group list-group-flush card-list">
-              <li class="list-group-item d-flex justify-content-between">
-                Vegetarian <span><input type="radio" name="food2" /></span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                Non-Vegeterian
-                <span><input type="radio" name="food2" /></span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                Vegan <span><input type="radio" name="food2" /></span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                Eggetarian <span><input type="radio" name="food2" /></span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card meal-card">
-            <div class="card-header">
-              Day-3: LUNCH
-            </div>
-            <ul class="list-group list-group-flush card-list">
-              <li class="list-group-item d-flex justify-content-between">
-                Vegetarian <span><input type="radio" name="food3" /></span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                Non-Vegeterian
-                <span><input type="radio" name="food3" /></span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                Vegan <span><input type="radio" name="food3" /></span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                Eggetarian <span><input type="radio" name="food3" /></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="btn-meal text-center">
-          <button class="meal-selection-btn btn text-white w-100% py-3">
-            Add Selection to Cart
-          </button>
+        <h1 class="ticket-page-heading pb-3">Select Your Lunch</h1>
+        <div class="text-center mt-3">
+          <p class="step-description">
+            <span class="mr-2"><i class="fas fa-circle circle-icon"></i></span>
+            <span class="mr-2">STEP 2</span>
+            Please select your lunch for the registered day. There will be no
+            further cost
+          </p>
         </div>
       </section>
     </main>
