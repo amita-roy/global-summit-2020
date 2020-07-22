@@ -222,7 +222,7 @@ footer {
   }
 
   .footer-dark-content-description,
-  .footer-dark-content small {
+  footer small {
     font-size: 4vw;
   }
 }

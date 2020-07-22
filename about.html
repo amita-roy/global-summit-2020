@@ -19,11 +19,69 @@
   </head>
   <body>
     <header class="position-relative">
-      <nav class="px-4 py-3">
-        <a href="#" class="d-block d-md-none"
-          ><i class="fas fa-bars menu-bar"></i
-        ></a>
-      </nav>
+      <div class="overlay">
+        <nav class="top-nav d-none d-md-block">
+          <div
+            class="nav-content d-flex align-items-center justify-content-end h-100 px-3"
+          >
+            <ul class="top-nav-list d-flex align-items-center mb-0">
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook-f facebook"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter twitter"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">English</a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">Main Page</a>
+              </li>
+              <li class="top-nav-list-item text-link">
+                <a href="#" class="text-white">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="main-nav d-none d-md-block">
+          <div
+            class="nav-content d-flex align-items-center justify-content-between px-3"
+          >
+            <div class="logo">
+              <a href="./home.html">
+                <img
+                  src="./assets/images/footer-logo.png"
+                  alt="logo"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <ul class="main-nav-list d-flex align-items-center mb-0">
+              <li class="main-nav-list-item">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="main-nav-list-item"><a href="#">Program</a></li>
+              <li class="main-nav-list-item">
+                <a href="./ticket.html">Join</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="#sponsors">Sponsors</a>
+              </li>
+              <li class="main-nav-list-item"><a href="#">News</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="px-4 py-3 small-nav d-md-none">
+          <a href="#" class="d-block d-md-none"
+            ><i class="fas fa-bars menu-bar"></i
+          ></a>
+        </nav>
+      </div>
     </header>
 
     <main class="container-fluid px-3 py-3 text-center">
@@ -165,18 +223,21 @@
           </div>
         </div>
       </section>
-
-      <section class="sponsors">
-        <h4 class="pb-2 section-heading">Sponsors</h4>
-        <div class="sponsors-image mt-4">
-          <img
-            src="./assets/images/sponsors.png"
-            alt="sponsors"
-            class="img-fluid sponsors"
-          />
-        </div>
-      </section>
     </main>
+
+    <div
+      class="sponsors bg-dark d-flex flex-column align-items-center justify-content-between"
+    >
+      <h4 class="pb-2 section-heading text-white mt-3">Sponsors</h4>
+      <div class="sponsors-image mt-4">
+        <img
+          src="./assets/images/sponsors.png"
+          alt="sponsors"
+          class="img-fluid sponsors"
+        />
+      </div>
+    </div>
+
     <footer class="d-md-none">
       <div class="footer-details">
         <div class="footer-logo-wraper">
@@ -192,7 +253,7 @@
             Global Summit 2020
             <span><i class="fas fa-globe-europe ml-2 globe"></i></span>
           </p>
-          <small>Some Rights Reserved</small>
+          <small class="text-dark">Some Rights Reserved</small>
         </div>
       </div>
     </footer>
