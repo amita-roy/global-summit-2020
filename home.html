@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Global Summit</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -67,6 +67,9 @@
             </div>
             <ul class="main-nav-list d-flex align-items-center mb-0">
               <li class="main-nav-list-item">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="main-nav-list-item">
                 <a href="./about.html">About</a>
               </li>
               <li class="main-nav-list-item"><a href="#program">Program</a></li>
@@ -87,9 +90,31 @@
         </nav>
 
         <nav class="px-4 py-3 small-nav d-md-none">
-          <span class="d-block d-md-none"
-            ><i class="fas fa-bars menu-bar"></i
-          ></span>
+          <button class="d-block d-md-none">
+            <i class="fas fa-bars menu-bar"></i>
+          </button>
+          <aside>
+            <ul class="nav-list mb-0">
+              <li class="nav-list-item mb-3">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="./about.html">About</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="#program">Program</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="./ticket.html ">Join</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="./about.html#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="#">News</a>
+              </li>
+            </ul>
+          </aside>
         </nav>
       </div>
     </header>
@@ -226,16 +251,20 @@
             </div>
           </div>
         </div>
-        <button class="join-summit-btn p-2 mt-3 mx-auto w-100">
-          Join Global Summit 2020
-        </button>
+        <a href="./ticket.html">
+          <button class="join-summit-btn p-2 mt-3 mx-auto w-100">
+            Join Global Summit 2020
+          </button>
+        </a>
       </section>
 
       <section class="featured-speaker text-center">
-        <h4 class="pb-2 section-heading">Featured Speakers</h4>
+        <h4 class="pb-2 section-heading speaker-section-heading">
+          Featured Speakers
+        </h4>
         <div class="featured-speakers mt-5">
           <div class="speaker position-relative">
-            <div class="speaker-img-wraper float-left mr-3">
+            <div class="speaker-img-wraper float-left mr-4">
               <img
                 src="https://d3n8a8pro7vhmx.cloudfront.net/icf/pages/1155/attachments/original/1517434966/JohnJung.jpg?1517434966"
                 alt="John G. Jung"
@@ -243,7 +272,7 @@
               />
               <img
                 src="./assets//images/Image-frame.svg"
-                alt=""
+                alt="img-frame"
                 class="position-absolute img-fluid img-frame"
               />
             </div>
@@ -253,13 +282,13 @@
                 Co-Founder, Intelligent Community Forum (Moderator)
               </h6>
               <p class="speaker-description">
-                The capital of the state of South Australia, Adelaide also
-                enjoys, according to The Economist, the distinction
+                ICF co-founder John G. Jung originated the Intelligent Community
+                concept and continues to serve as the Forum's leading visionary.
               </p>
             </div>
           </div>
           <div class="speaker position-relative">
-            <div class="speaker-img-wraper float-left mr-3">
+            <div class="speaker-img-wraper float-left mr-4">
               <img
                 src="https://d3n8a8pro7vhmx.cloudfront.net/icf/pages/1726/attachments/original/1590009540/Crandall.jpg?1590009540"
                 alt="Michelle Crandall"
@@ -267,7 +296,7 @@
               />
               <img
                 src="./assets//images/Image-frame.svg"
-                alt=""
+                alt="img-frame"
                 class="position-absolute img-fluid img-frame"
               />
             </div>
@@ -284,8 +313,8 @@
             </div>
           </div>
 
-          <div class="speaker position-relative d-none">
-            <div class="speaker-img-wraper float-left mr-3">
+          <div class="speaker position-relative d-none d-md-block">
+            <div class="speaker-img-wraper float-left mr-4">
               <img
                 src="https://d3n8a8pro7vhmx.cloudfront.net/icf/pages/1155/attachments/original/1517434967/LouZacharilla.jpg?1517434967"
                 alt="Louis Zacharilla"
@@ -293,7 +322,7 @@
               />
               <img
                 src="./assets//images/Image-frame.svg"
-                alt=""
+                alt="img-frame"
                 class="position-absolute img-fluid img-frame"
               />
             </div>
@@ -303,99 +332,114 @@
                 Co-Founder, Intelligent Community Forum
               </h6>
               <p class="speaker-description">
-                An overview of the multi-faceted innovation ecosystem of the
-                Central Ohio region, from city center to small suburban cities,
-                each pursuing independent agendas.
+                Louis Zacharilla helped found the Intelligent Community
+                movement. He is the developer of the Top Seven and Intelligent
+                Community of the Year Awards programs.
               </p>
             </div>
           </div>
 
-          <div class="speaker position-relative d-none">
-            <div class="speaker-img-wraper float-left mr-3">
+          <div class="speaker position-relative d-none d-md-block">
+            <div class="speaker-img-wraper float-left mr-4">
               <img
-                src="https://d3n8a8pro7vhmx.cloudfront.net/icf/pages/1155/attachments/original/1517434967/LouZacharilla.jpg?1517434967"
+                src="./assets/images/Robert Bell.jpg"
                 alt="Louis Zacharilla"
                 class="img-fluid speaker-image"
               />
               <img
                 src="./assets//images/Image-frame.svg"
-                alt=""
+                alt="img-frame"
                 class="position-absolute img-fluid img-frame"
               />
             </div>
             <div class="speaker-details text-left float-none">
-              <h5 class="speaker-name">Louis Zacharilla</h5>
+              <h5 class="speaker-name">Robert Bell</h5>
               <h6 class="speaker-title">
                 Co-Founder, Intelligent Community Forum
               </h6>
               <p class="speaker-description">
-                An overview of the multi-faceted innovation ecosystem of the
-                Central Ohio region, from city center to small suburban cities,
-                each pursuing independent agendas.
+                Robert Bell is co-founder of the Intelligent Community Forum,
+                where he heads its research, analysis and content development
+                activities.
               </p>
             </div>
           </div>
 
-          <div class="speaker position-relative d-none">
-            <div class="speaker-img-wraper float-left mr-3">
+          <div class="speaker position-relative d-none d-md-block">
+            <div class="speaker-img-wraper float-left mr-4">
               <img
-                src="https://d3n8a8pro7vhmx.cloudfront.net/icf/pages/1155/attachments/original/1517434967/LouZacharilla.jpg?1517434967"
-                alt="Louis Zacharilla"
+                src="./assets/images/Faith_Knutsen.jpeg"
+                alt="Faith Knutsen"
                 class="img-fluid speaker-image"
               />
               <img
                 src="./assets//images/Image-frame.svg"
-                alt=""
+                alt="img-frame"
                 class="position-absolute img-fluid img-frame"
               />
             </div>
             <div class="speaker-details text-left float-none">
-              <h5 class="speaker-name">Louis Zacharilla</h5>
+              <h5 class="speaker-name">Faith Knutsen</h5>
               <h6 class="speaker-title">
-                Co-Founder, Intelligent Community Forum
+                Director, Social Innovation and Entrepreneurship, Ohio
+                University
               </h6>
               <p class="speaker-description">
-                An overview of the multi-faceted innovation ecosystem of the
-                Central Ohio region, from city center to small suburban cities,
-                each pursuing independent agendas.
+                Faith Knutsen has served the Voinovich School since 2008. Faith
+                directs the Social Enterprise Ecosystem (SEE) project, funded by
+                the Appalachian Regional Commission.
               </p>
             </div>
           </div>
 
-          <div class="speaker position-relative d-none">
-            <div class="speaker-img-wraper float-left mr-3">
+          <div class="speaker position-relative d-none d-md-block">
+            <div class="speaker-img-wraper float-left mr-4">
               <img
-                src="https://d3n8a8pro7vhmx.cloudfront.net/icf/pages/1155/attachments/original/1517434967/LouZacharilla.jpg?1517434967"
-                alt="Louis Zacharilla"
+                src="./assets/images/Craig_Chambers.jpg"
+                alt="Craig Chambers"
                 class="img-fluid speaker-image"
               />
               <img
                 src="./assets//images/Image-frame.svg"
-                alt=""
+                alt="img-frame"
                 class="position-absolute img-fluid img-frame"
               />
             </div>
             <div class="speaker-details text-left float-none">
-              <h5 class="speaker-name">Louis Zacharilla</h5>
+              <h5 class="speaker-name">Craig Chambers</h5>
               <h6 class="speaker-title">
-                Co-Founder, Intelligent Community Forum
+                Instructor, Voinovich Academy, Ohio University
               </h6>
               <p class="speaker-description">
-                An overview of the multi-faceted innovation ecosystem of the
-                Central Ohio region, from city center to small suburban cities,
-                each pursuing independent agendas.
+                Craig Chambers develops and delivers executive education for
+                emerging public sector leaders in innovation management and
+                smart government.
               </p>
             </div>
           </div>
 
           <button
-            class="more-link p-2 w-100 d-flex align-items-center justify-content-center mx-auto"
+            class="more-link p-2 w-100 d-flex align-items-center justify-content-center mx-auto d-md-none"
           >
             More <span><i class="fas fa-chevron-down ml-2"></i></span>
           </button>
         </div>
       </section>
     </main>
+
+    <div
+      id="sponsors"
+      class="sponsors bg-dark d-flex flex-column align-items-center justify-content-between home-sponsors"
+    >
+      <h4 class="pb-2 section-heading text-white mt-3">Sponsors</h4>
+      <div class="sponsors-image mt-4">
+        <img
+          src="./assets/images/sponsors.png"
+          alt="sponsors"
+          class="img-fluid sponsors"
+        />
+      </div>
+    </div>
     <footer>
       <div class="footer-details">
         <div class="footer-logo-wraper">

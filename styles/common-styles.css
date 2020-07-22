@@ -85,6 +85,36 @@ header {
   height: 100%;
 }
 
+.small-nav button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+aside {
+  position: absolute;
+  width: 30%;
+  min-height: 100vh;
+  background-color: var(--black-color);
+  top: 60px;
+  left: 0;
+  transform: translateX(-260px);
+  transition: transform 1.5s ease-in;
+  padding: 15px;
+}
+
+aside .nav-list-item a {
+  color: var(--white-color);
+}
+
+aside .nav-list-item a:hover {
+  text-decoration: underline;
+}
+
+.small-nav button:focus ~ aside {
+  transform: translateX(0);
+}
+
 .nav-content {
   height: 100%;
 }
@@ -219,6 +249,10 @@ footer {
 
   .section-heading {
     font-size: 7vw;
+  }
+
+  .sponsors {
+    margin-bottom: 60px;
   }
 
   .footer-dark-content-description,

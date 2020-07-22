@@ -53,6 +53,10 @@
   box-shadow: 0 3px 3px 3px rgba(165, 165, 165, 0.5);
 }
 
+.speaker-section-heading {
+  margin-bottom: 60px;
+}
+
 .more-link,
 .join-summit-btn {
   max-width: 400px;
@@ -120,6 +124,10 @@
   color: var(--primary-color);
 }
 
+.home-sponsors {
+  margin-bottom: 80px;
+}
+
 @media only screen and (max-width: 360px) {
   .summit-date {
     font-size: 8vw;
@@ -157,5 +165,14 @@
   .program-detail-heading,
   .program-list li a {
     color: var(--white-color);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .featured-speakers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
