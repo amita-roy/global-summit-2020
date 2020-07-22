@@ -177,7 +177,6 @@ ul {
 }
 
 .tag-line,
-.summit-description,
 .footer-dark-content-description {
   font-weight: 300;
 }
@@ -196,7 +195,8 @@ ul {
   max-width: 800px;
   border: 4px double var(--primary-light-color);
   border-radius: 6px;
-  color: var(--dark-gray);
+  color: var(--black-color);
+  font-weight: 400;
 }
 
 .right-aligned-text {
