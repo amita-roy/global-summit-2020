@@ -1,4 +1,4 @@
-# HTML/CSS Capstone: COP26 UN Climate Conference
+# HTML/CSS Capstone: ICF Global Summit 2020
 
 > This project is a website for the ICF Global Conference taking place in Dublin, Ohio, USA in October 2020.
 
