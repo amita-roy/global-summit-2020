@@ -99,7 +99,7 @@ aside {
   top: 60px;
   left: 0;
   transform: translateX(-260px);
-  transition: transform 1.5s ease-in;
+  transition: transform 0.5s ease-in;
   padding: 15px;
 }
 
@@ -132,7 +132,7 @@ ul {
 }
 
 .main-nav-list-item:not(:last-of-type) {
-  margin-right: 5rem;
+  margin-right: 4rem;
 }
 
 .main-nav-list-item a {
