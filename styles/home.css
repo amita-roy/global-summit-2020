@@ -12,19 +12,31 @@
   list-style: none;
 }
 
-.program li {
-  font-size: 1rem;
-  font-weight: 300;
+.program-list li a {
+  color: var(--black-color);
 }
 
-.program li:hover {
+.program-list li a:hover {
   color: var(--primary-color);
-  font-weight: 400;
+  font-size: 1rem;
 }
 
 .program-detail-heading {
   font-size: 1.5rem;
   font-weight: 400;
+  color: var(--primary-color);
+}
+
+.conference-img:hover {
+  opacity: 0.6;
+}
+
+.img-and-title h5 {
+  bottom: 0;
+  color: var(--white-color);
+  background-color: rgba(236, 82, 66, 0.8);
+  width: 100%;
+  font-size: 1.1rem;
 }
 
 .join-summit-btn {
@@ -119,16 +131,11 @@
 
   .program-list li {
     font-size: 5vw;
-    cursor: pointer;
-  }
-
-  .program-list li:hover {
-    color: var(--primary-color);
   }
 
   .program-detail-heading {
     font-weight: 700;
-    font-size: 6vw;
+    font-size: 5vw;
   }
 
   .join-summit-btn,
@@ -139,22 +146,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .conference-img:hover {
-    opacity: 0.6;
-  }
-
-  .img-and-title h5 {
-    bottom: 0;
-    color: var(--white-color);
-    background-color: rgba(236, 82, 66, 0.8);
-    width: 100%;
-  }
-
   .program-detail {
     background-color: var(--black-color);
     color: var(--white-color);
     border-radius: 6px;
     outline: 4px double var(--body);
     outline-offset: -12px;
+  }
+
+  .program-detail-heading,
+  .program-list li a {
+    color: var(--white-color);
   }
 }

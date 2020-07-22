@@ -25,7 +25,68 @@
   <body>
     <header class="position-relative">
       <div class="overlay">
-        <nav class="px-4 py-3 small-nav">
+        <nav class="top-nav d-none d-md-block">
+          <div
+            class="nav-content d-flex align-items-center justify-content-end h-100 px-3"
+          >
+            <ul class="top-nav-list d-flex align-items-center mb-0">
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook-f facebook"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter twitter"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">English</a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">Main Page</a>
+              </li>
+              <li class="top-nav-list-item text-link">
+                <a href="#" class="text-white">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="main-nav d-none d-md-block">
+          <div
+            class="nav-content d-flex align-items-center justify-content-between px-3"
+          >
+            <div class="logo">
+              <a href="./home.html">
+                <img
+                  src="./assets/images/footer-logo.png"
+                  alt="logo"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <ul class="main-nav-list d-flex align-items-center mb-0">
+              <li class="main-nav-list-item">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="main-nav-list-item"><a href="#program">Program</a></li>
+              <li class="main-nav-list-item">
+                <a href="./ticket.html">Join</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./about.html#sponsors">Sponsors</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a
+                  href="https://www.intelligentcommunity.org/tags/news_coverage"
+                  >News</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="px-4 py-3 small-nav d-md-none">
           <span class="d-block d-md-none"
             ><i class="fas fa-bars menu-bar"></i
           ></span>
@@ -60,18 +121,18 @@
         <h3>Global Summit 2020</h3>
       </div>
 
-      <section class="main-program text-center mt-5">
+      <section id="program" class="main-program text-center mt-5">
         <h4 class="pb-2 section-heading">Main Program</h4>
 
-        <div class="programs d-flex flex-column">
-          <div class="program program-day-1 mt-4">
+        <div class="programs d-flex flex-column flex-md-row">
+          <div class="program program-day-1 mt-4 mr-md-3">
             <div class="img-and-title position-relative">
               <img
                 src="./assets/images/day-1-pic.jpeg"
                 alt="conference"
                 class="img-fluid conference-img"
               />
-              <h5 class="position-absolute px-1 py-2 mb-0 d-md-none">
+              <h5 class="position-absolute px-1 py-2 mb-0">
                 October 21: Top 7 Communities Day
               </h5>
             </div>
@@ -84,37 +145,32 @@
               </h5>
               <ul class="program-list">
                 <li class="mb-2">
-                  Registration
+                  <a href="#">Registration</a>
                 </li>
                 <li class="mb-2">
-                  Keynote Panel
+                  <a href="#">Keynote Panel</a>
                 </li>
                 <li class="mb-2">
-                  Top7 Conversation
+                  <a href="#">Top7 Conversation</a>
                 </li>
+
+                <li class="mb-2"><a href="#"> Panel Discussion</a></li>
                 <li class="mb-2">
-                  Panel Discussion
+                  <a href="#">Lightning Round Presentations</a>
                 </li>
-                <li class="mb-2">
-                  Lightning Round Presentations
-                </li>
-                <li class="mb-2">
-                  Innovators’ Conversation
-                </li>
-                <li class="mb-2">
-                  Top7 Communities Reception
-                </li>
+                <li class="mb-2"><a href="#">Innovators’ Conversation</a></li>
+                <li class="mb-2"><a href="#">Top7 Communities Reception</a></li>
               </ul>
             </div>
           </div>
-          <div class="program program-day-2 mt-4">
+          <div class="program program-day-2 mt-4 mr-md-3">
             <div class="img-and-title position-relative">
               <img
                 src="./assets/images/day-2-pic.jpeg"
                 alt="conference"
                 class="img-fluid conference-img"
               />
-              <h5 class="position-absolute px-1 py-2 mb-0 d-md-none">
+              <h5 class="position-absolute px-1 py-2 mb-0">
                 October 22: Intelligent Community of theYear Day
               </h5>
             </div>
@@ -125,26 +181,16 @@
                 Strategies for Progress
               </h5>
               <ul class="program-list">
+                <li class="mb-2"><a href="#">Registration</a></li>
                 <li class="mb-2">
-                  Registration
+                  <a href="#">Bringing Broadband to Your Community</a>
                 </li>
+                <li class="mb-2"><a href="#">Top7 Conversation</a></li>
+                <li class="mb-2"><a href="#">Interview</a></li>
+                <li class="mb-2"><a href="#"> Performance</a></li>
+                <li class="mb-2"><a href="#"> Interactive</a></li>
                 <li class="mb-2">
-                  Bringing Broadband to Your Community
-                </li>
-                <li class="mb-2">
-                  Top7 Conversation
-                </li>
-                <li class="mb-2">
-                  Interview
-                </li>
-                <li class="mb-2">
-                  Performance
-                </li>
-                <li class="mb-2">
-                  Interactive
-                </li>
-                <li class="mb-2">
-                  Intelligent Communities Awards Dinner
+                  <a href="#"> Intelligent Communities Awards Dinner</a>
                 </li>
               </ul>
             </div>
@@ -156,7 +202,7 @@
                 alt="conference"
                 class="img-fluid conference-img"
               />
-              <h5 class="position-absolute px-1 py-2 mb-0 d-md-none">
+              <h5 class="position-absolute px-1 py-2 mb-0">
                 October 23: Development & Ideas Day
               </h5>
             </div>
@@ -168,27 +214,21 @@
               </h5>
               <ul class="program-list">
                 <li class="mb-2">
-                  Registration and Breakfast
+                  <a href="#"> Registration and Breakfast</a>
                 </li>
+                <li class="mb-2"><a href="#">Opening of the Exhibits</a></li>
+                <li class="mb-2"><a href="#">Metro Columbus Tours</a></li>
+                <li class="mb-2"><a href="#">Welcome Lunch</a></li>
                 <li class="mb-2">
-                  Opening of the Exhibits
-                </li>
-                <li class="mb-2">
-                  Metro Columbus Tours
-                </li>
-                <li class="mb-2">
-                  Welcome Lunch
-                </li>
-                <li class="mb-2">
-                  Living Lab Site Visits in Greater Dublin
+                  <a href="#"> Living Lab Site Visits in Greater Dublin</a>
                 </li>
               </ul>
             </div>
           </div>
-          <button class="join-summit-btn p-2 mt-3 mx-auto w-100">
-            Join Global Summit 2020
-          </button>
         </div>
+        <button class="join-summit-btn p-2 mt-3 mx-auto w-100">
+          Join Global Summit 2020
+        </button>
       </section>
 
       <section class="featured-speaker text-center">
