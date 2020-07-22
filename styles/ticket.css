@@ -2,7 +2,9 @@
   height: 60px;
 }
 
-.steps {
+.steps,
+.meal-section,
+.meal-selection-btn {
   margin-top: 40px;
 }
 
@@ -14,13 +16,16 @@
 
 .step {
   display: inline-block;
-  color: var(--white-color);
   border-radius: 100%;
   padding: 1.5rem 0.8rem;
   border: 10px solid var(--body);
-  background-color: var(--black-color);
   top: -36px;
   left: 40px;
+}
+
+.step,
+.meal-selection-btn {
+  background-color: var(--black-color);
 }
 
 .step-description {
@@ -51,31 +56,26 @@
   flex: 1;
 }
 
-a.add-to-cart {
+a.add-to-cart,
+.list-group-item {
   background-color: var(--primary-color);
-  color: var(--white-color);
 }
 
+.step,
+.list-group-item,
+a.add-to-cart,
 .add-to-cart:active,
 .add-to-cart:focus {
   color: var(--white-color);
 }
 
 .meal-section {
-  margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.list-group-item {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-}
-
 .meal-selection-btn {
-  background-color: var(--black-color);
   width: 100%;
   max-width: 400px;
-  margin-top: 40px;
   border-radius: 6px;
 }
 
