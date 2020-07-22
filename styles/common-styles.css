@@ -234,6 +234,10 @@ footer {
   font-size: 0.9rem;
 }
 
+.sponsors {
+  margin-bottom: 80px;
+}
+
 @media only screen and (max-width: 360px) {
   h1 {
     font-size: 10vw;
