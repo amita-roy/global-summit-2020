@@ -94,13 +94,14 @@ header {
 aside {
   position: absolute;
   width: 30%;
-  min-height: 100vh;
+  min-height: 300px;
   background-color: var(--black-color);
   top: 60px;
   left: 0;
   transform: translateX(-260px);
   transition: transform 0.5s ease-in;
   padding: 15px;
+  z-index: 999;
 }
 
 aside .nav-list-item a {
