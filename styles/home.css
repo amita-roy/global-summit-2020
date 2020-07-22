@@ -6,32 +6,34 @@
 
 .program {
   flex: 1;
+  background-color: var(--black-color);
+  padding: 15px;
+  color: var(--white-color);
+  justify-content: space-between;
 }
 
-.program ul {
-  list-style: none;
+.program .title {
+  font-size: 1.4rem;
+  color: var(--primary-color);
 }
 
-.program-list li a {
-  color: var(--black-color);
+.program-card-logo {
+  max-width: 40px;
 }
 
-.program-list li a:hover,
+.forum-icon {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
 .speaker-name,
 .more-link i {
   font-size: 1rem;
 }
 
-.program-list li a:hover,
-.program-detail-heading,
 .speaker-title,
 .more-link i {
   color: var(--primary-color);
-}
-
-.program-detail-heading {
-  font-size: 1.5rem;
-  font-weight: 400;
 }
 
 .conference-img:hover {
@@ -50,12 +52,11 @@
   border: none;
   font-size: 1.3rem;
   color: var(--white-color);
-  background-image:
-    linear-gradient(
-      to right bottom,
-      var(--primary-color),
-      var(--primary-dark-color)
-    );
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-color),
+    var(--primary-dark-color)
+  );
   max-width: 400px;
   box-shadow: 0 3px 3px 3px rgba(165, 165, 165, 0.5);
 }
@@ -73,12 +74,11 @@
 }
 
 .join-summit-btn:hover {
-  background-image:
-    linear-gradient(
-      to right bottom,
-      var(--primary-dark-color) 20%,
-      #6b231b
-    );
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-dark-color) 20%,
+    #6b231b
+  );
 }
 
 .featured-speaker {
@@ -113,7 +113,7 @@
 }
 
 .speaker-description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -125,10 +125,6 @@
   margin-bottom: 50px;
 }
 
-.home-sponsors {
-  margin-bottom: 80px;
-}
-
 @media only screen and (max-width: 360px) {
   .summit-date {
     font-size: 8vw;
@@ -138,10 +134,10 @@
     font-size: 6vw;
   }
 
-  .program-list li,
-  .program-detail-heading,
   .join-summit-btn,
   .more-link,
+  .program .title,
+  .description,
   .more-link i {
     font-size: 5vw;
   }
@@ -150,31 +146,35 @@
     font-size: 4vw;
   }
 
-  .program-detail-heading {
-    font-weight: 700;
+  .program .title {
+    color: var(--primary-color);
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .program-detail {
-    background-color: var(--black-color);
-    border-radius: 6px;
-    outline: 4px double var(--body);
-    outline-offset: -12px;
+  .program .description,
+  .program .title {
+    text-align: left;
   }
 
-  .program-detail-heading,
-  .program-list li a,
-  .program-detail {
-    color: var(--white-color);
+  .program {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    column-gap: 0.5rem;
+  }
+
+  .program .title {
+    min-width: 100px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .featured-speakers {
+    max-width: 1100px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }
