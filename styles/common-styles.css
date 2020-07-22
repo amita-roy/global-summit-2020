@@ -17,8 +17,13 @@
 }
 
 body {
-  background-color: var(--body);
   font-family: "Lato", sans-serif;
+}
+
+body,
+.main-nav,
+footer {
+  background-color: var(--body);
 }
 
 @font-face {
@@ -36,11 +41,12 @@ h3,
 
 h1,
 h3 {
-  background: repeating-linear-gradient(
-    45deg,
-    var(--primary-color),
-    var(--primary-dark-color) 10%
-  );
+  background:
+    repeating-linear-gradient(
+      45deg,
+      var(--primary-color),
+      var(--primary-dark-color) 10%
+    );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -60,6 +66,11 @@ header {
 
 .top-nav {
   height: 30px;
+}
+
+.top-nav,
+aside,
+.dark-footer {
   background-color: var(--black-color);
 }
 
@@ -73,7 +84,6 @@ header {
 
 .main-nav {
   height: 70px;
-  background-color: var(--body);
   box-shadow: 0 3px 4px 3px rgba(155, 155, 155, 0.5);
 }
 
@@ -93,19 +103,32 @@ header {
 
 aside {
   position: absolute;
-  width: 30%;
+  width: 180px;
   min-height: 300px;
-  background-color: var(--black-color);
   top: 60px;
   left: 0;
   transform: translateX(-260px);
   transition: transform 0.5s ease-in;
-  padding: 15px;
   z-index: 999;
 }
 
-aside .nav-list-item a {
+aside,
+.footer-details {
+  padding: 15px;
+}
+
+.main-nav-list-item a {
+  color: var(--black-color);
+}
+
+aside .nav-list-item a,
+.dark-footer {
   color: var(--white-color);
+}
+
+.footer-content .summit-name,
+.main-nav-list-item a:hover {
+  color: var(--primary-color);
 }
 
 aside .nav-list-item a:hover {
@@ -124,8 +147,14 @@ aside .nav-list-item a:hover {
 main,
 .footer-details {
   max-width: 1350px;
-  width: 100%;
   margin: 0 auto;
+}
+
+.nav-content,
+main,
+footer,
+.footer-details {
+  width: 100%;
 }
 
 ul {
@@ -134,14 +163,6 @@ ul {
 
 .main-nav-list-item:not(:last-of-type) {
   margin-right: 4rem;
-}
-
-.main-nav-list-item a {
-  color: var(--black-color);
-}
-
-.main-nav-list-item a:hover {
-  color: var(--primary-color);
 }
 
 .menu-bar {
@@ -153,6 +174,11 @@ ul {
   font-size: 1.5rem;
   letter-spacing: 1px;
   color: var(--primary-light-color);
+}
+
+.tag-line,
+.summit-description,
+.footer-dark-content-description {
   font-weight: 300;
 }
 
@@ -171,7 +197,6 @@ ul {
   border: 4px double var(--primary-light-color);
   border-radius: 6px;
   color: var(--dark-gray);
-  font-weight: 300;
 }
 
 .right-aligned-text {
@@ -192,18 +217,7 @@ ul {
   display: inline-block;
 }
 
-footer {
-  width: 100%;
-  background-color: var(--body);
-}
-
-.dark-footer {
-  background-color: var(--black-color);
-  color: var(--white-color);
-}
-
 .footer-details {
-  padding: 15px;
   display: flex;
   justify-content: flex-start;
 }
@@ -212,10 +226,6 @@ footer {
   max-width: 100px;
   margin-right: 2rem;
   height: auto;
-}
-
-.footer-content .summit-name {
-  color: var(--primary-color);
 }
 
 .footer-content .summit-name,
@@ -230,7 +240,6 @@ footer {
 }
 
 .footer-dark-content-description {
-  font-weight: 300;
   line-height: 1.5rem;
   font-size: 0.9rem;
 }

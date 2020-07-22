@@ -21,6 +21,10 @@
   overflow: hidden;
   width: 100%;
   padding-top: 24.25%;
+}
+
+.video-player,
+.summit-content {
   flex: 1;
 }
 
@@ -33,10 +37,6 @@
   width: 100%;
   height: 100%;
   border: none;
-}
-
-.summit-content {
-  flex: 1;
 }
 
 .summit-content p {
