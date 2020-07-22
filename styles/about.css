@@ -21,6 +21,7 @@
   overflow: hidden;
   width: 100%;
   padding-top: 24.25%;
+  flex: 1;
 }
 
 .responsive-iframe {
@@ -35,7 +36,7 @@
 }
 
 .summit-content {
-  margin-left: 3rem;
+  flex: 1;
 }
 
 .summit-2017 {
