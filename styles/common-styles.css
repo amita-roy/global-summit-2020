@@ -50,20 +50,67 @@ header {
   background-image: url(../assets/images/header_background.jpg);
   opacity: 0.8;
   background-position: 40% 65%;
-  height: 300px;
+  height: 400px;
 }
 
-nav {
+.overlay {
   height: 100%;
   background-color: rgba(247, 247, 247, 0.8);
 }
 
-nav,
+.top-nav {
+  height: 30px;
+  background-color: var(--black-color);
+}
+
+.twitter:hover {
+  color: #37a1f2;
+}
+
+.facebook:hover {
+  color: #3a5997;
+}
+
+.main-nav {
+  height: 70px;
+  background-color: var(--body);
+  box-shadow: 0 3px 4px 3px rgba(155, 155, 155, 0.5);
+}
+
+.logo {
+  max-width: 80px;
+}
+
+.small-nav {
+  height: 100%;
+}
+
+.nav-content {
+  height: 100%;
+}
+
+.nav-content,
 main,
 .footer-details {
   max-width: 1350px;
   width: 100%;
   margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-nav-list-item:not(:last-of-type) {
+  margin-right: 5rem;
+}
+
+.main-nav-list-item a {
+  color: var(--black-color);
+}
+
+.main-nav-list-item a:hover {
+  color: var(--primary-color);
 }
 
 .menu-bar {
@@ -117,6 +164,11 @@ main,
 footer {
   width: 100%;
   background-color: var(--body);
+}
+
+.dark-footer {
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 .footer-details {
