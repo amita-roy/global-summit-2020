@@ -82,7 +82,7 @@ Finally, if you've read this far, don't forget to give this repo a ⭐️. They'
 
 - Content was largely inspired by [this](https://www.intelligentcommunity.org/summit_2020_speakers) website, which lists speakers at the ICF in Dublin, Ohio on the 21st-23rd October 2020.
 
-- README Content has been taken from [Joe Burke](https://github.com/Joseph-Burke), one of my stand up team member.
+- README Content was taken from [Joe Burke](https://github.com/Joseph-Burke), one of my stand up team member.
 
 - Icons were taken from https://fontawesome.com/
 
