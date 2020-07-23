@@ -155,9 +155,17 @@ aside .nav-list-item a:hover {
 
 .nav-content,
 main,
+.partners,
 .footer-details {
   max-width: 1350px;
   margin: 0 auto;
+  width: 100%;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
 }
 
 .nav-content,
@@ -261,6 +269,7 @@ ul {
 
 .sponsors {
   margin-bottom: 80px;
+  background-color: #414246;
 }
 
 .about-dark-footer {
@@ -303,6 +312,7 @@ ul {
   .footer-dark-content .summit-name {
     font-size: 4vw;
   }
+
 }
 
 @media only screen and (min-width: 769px) {
@@ -337,6 +347,15 @@ ul {
 
   .about-dark-footer {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 985px) {
+  .partners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 
