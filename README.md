@@ -6,6 +6,9 @@
 
 I was given [this design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) of [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)'s to follow, mirroring its structure, typography and colors as I built my own conference website.
 
+> I have created this sidebar without using bootstrap.
+![screenshot](assets/images/sidebar.png)
+
 > I am using logo and content from [this](https://www.intelligentcommunity.org) website. I have 2 version for my footer (dark and light). For the dark footer, I wasn't able to integrate the original logo as it has dark color  so I created the my own logo for dark footer.
 
 ![screenshot](assets/images/light-logo.svg)
