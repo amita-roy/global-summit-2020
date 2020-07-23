@@ -28,6 +28,10 @@
   flex: 1;
 }
 
+.summit-content {
+  display: none;
+}
+
 .responsive-iframe {
   position: absolute;
   top: 0;
@@ -70,6 +74,10 @@
   font-size: 1.8rem;
 }
 
+.summit-small-hidden {
+  display: none;
+}
+
 @media only screen and (max-width: 360px) {
   .summit-year,
   .summit-location {
@@ -92,7 +100,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .past-summits,
   .past-summits-list {
     max-width: 1200px;
@@ -104,5 +112,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .summit-content {
+    display: block;
+  }
+
+  .summit-small-hidden {
+    display: block;
   }
 }

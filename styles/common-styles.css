@@ -87,12 +87,18 @@ aside,
   box-shadow: 0 3px 4px 3px rgba(155, 155, 155, 0.5);
 }
 
+.main-nav,
+.top-nav {
+  display: none;
+}
+
 .logo {
   max-width: 80px;
 }
 
 .small-nav {
   height: 100%;
+  display: block;
 }
 
 .small-nav button {
@@ -124,6 +130,10 @@ aside,
 aside .nav-list-item a,
 .dark-footer {
   color: var(--white-color);
+}
+
+.summit-description2 {
+  display: none;
 }
 
 .footer-content .summit-name,
@@ -204,6 +214,7 @@ ul {
   right: -224px;
   transform: rotate(90deg);
   opacity: 0.4;
+  display: none;
 }
 
 .right-aligned-text h3 {
@@ -245,10 +256,15 @@ ul {
 .footer-dark-content-description {
   line-height: 1.5rem;
   font-size: 0.9rem;
+  display: none;
 }
 
 .sponsors {
   margin-bottom: 80px;
+}
+
+.about-dark-footer {
+  display: none;
 }
 
 @media only screen and (max-width: 360px) {
@@ -286,5 +302,46 @@ ul {
   .footer-content .summit-name,
   .footer-dark-content .summit-name {
     font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .top-nav,
+  .main-nav {
+    display: block;
+  }
+
+  .small-nav {
+    display: none;
+  }
+
+  .footer-dark-content-description {
+    display: block;
+  }
+
+  .footer-dark-content-description1 {
+    display: none;
+  }
+
+  .summit-description1 {
+    display: none;
+  }
+
+  .summit-description2 {
+    display: block;
+  }
+
+  .footer-light {
+    display: none;
+  }
+
+  .about-dark-footer {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 985px) {
+  .right-aligned-text {
+    display: block;
   }
 }

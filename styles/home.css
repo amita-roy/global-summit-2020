@@ -26,6 +26,10 @@
   color: var(--primary-color);
 }
 
+.speaker-small-hidden {
+  display: none;
+}
+
 .speaker-name,
 .more-link i {
   font-size: 1rem;
@@ -125,6 +129,7 @@
   color: var(--light-black-color);
   margin-top: 80px;
   margin-bottom: 50px;
+  display: none;
 }
 
 @media only screen and (max-width: 360px) {
@@ -139,12 +144,12 @@
   .join-summit-btn,
   .more-link,
   .program .title,
-  .description,
   .more-link i {
     font-size: 5vw;
   }
 
-  .speaker-description {
+  .speaker-description,
+  .description {
     font-size: 4vw;
   }
 
@@ -166,11 +171,15 @@
   }
 
   .program .title {
-    min-width: 100px;
+    min-width: 85px;
+  }
+
+  .more-link {
+    display: flex;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .featured-speakers {
     max-width: 1100px;
     margin: 0 auto;
@@ -178,5 +187,13 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1.5rem;
+  }
+
+  .speaker-small-hidden {
+    display: block;
+  }
+
+  .more-link {
+    display: none;
   }
 }
