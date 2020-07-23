@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="342.736" height="266" viewBox="0 0 342.736 266">
+  <g id="light-logo" transform="translate(-571.095 -124)">
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="133" cy="133" r="133" transform="translate(599 124)" fill="#fff"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="132.5" cy="132.5" r="132.5" transform="translate(621 125)" fill="#ec5242"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="191.5" cy="8" rx="191.5" ry="8" transform="matrix(0.875, 0.485, -0.485, 0.875, 578.852, 174.773)" fill="#fff"/>
+    <path id="Icon_material-star" data-name="Icon material-star" d="M29.491,43.451l16.371,9.881L41.517,34.709l14.464-12.53L36.934,20.563,29.491,3,22.047,20.563,3,22.179l14.464,12.53L13.119,53.332Z" transform="matrix(0.999, -0.035, 0.035, 0.999, 780.035, 281.046)" fill="#fff" stroke="#ec5242" stroke-width="1"/>
+  </g>
+</svg>

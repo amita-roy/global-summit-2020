@@ -1,0 +1,124 @@
+.about-summit {
+  margin-bottom: 50px;
+  margin-top: 30px;
+  max-width: 350px;
+}
+
+.about-summit strong {
+  color: var(--primary-color);
+}
+
+.ICF-logo-image {
+  margin-bottom: 30px;
+}
+
+.past-summits {
+  margin: 50px 0;
+}
+
+.video-player {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 24.25%;
+}
+
+.video-player,
+.summit-content {
+  flex: 1;
+}
+
+.summit-content {
+  display: none;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.summit-content p {
+  line-height: 2rem;
+}
+
+.summit-2017 {
+  margin-top: 40px;
+}
+
+.summit-detail {
+  top: 0;
+  left: 0;
+  color: var(--white-color);
+  bottom: 0;
+  right: 0;
+  background-color: rgba(236, 83, 66, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summit-year {
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.summit-year,
+.summit-location {
+  font-size: 1.8rem;
+}
+
+.summit-small-hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 360px) {
+  .summit-year,
+  .summit-location {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-summit p {
+    font-size: 3.5vw;
+  }
+
+  .video-player {
+    height: 28vh;
+  }
+
+  .past-summit {
+    flex: 1;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .past-summits,
+  .past-summits-list {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .past-summits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .summit-content {
+    display: block;
+  }
+
+  .summit-small-hidden {
+    display: block;
+  }
+}

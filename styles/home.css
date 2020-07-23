@@ -1,0 +1,199 @@
+.summit-date {
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: var(--light-black-color);
+}
+
+.program {
+  flex: 1;
+  background-color: var(--black-color);
+  padding: 15px;
+  color: var(--white-color);
+  justify-content: space-between;
+}
+
+.program .title {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.program-card-logo {
+  max-width: 40px;
+}
+
+.forum-icon {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.speaker-small-hidden {
+  display: none;
+}
+
+.speaker-name,
+.more-link i {
+  font-size: 1rem;
+}
+
+.speaker-title,
+.more-link i {
+  color: var(--primary-color);
+}
+
+.conference-img:hover {
+  opacity: 0.6;
+}
+
+.img-and-title h5 {
+  bottom: 0;
+  color: var(--white-color);
+  background-color: rgba(236, 82, 66, 0.8);
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.join-summit-btn {
+  border: none;
+  font-size: 1.3rem;
+  color: var(--white-color);
+  background-image:
+    linear-gradient(
+      to right bottom,
+      var(--primary-color),
+      var(--primary-dark-color)
+    );
+  max-width: 400px;
+  box-shadow: 0 3px 3px 3px rgba(165, 165, 165, 0.5);
+}
+
+.speaker-section-heading {
+  margin-bottom: 60px;
+}
+
+.more-link,
+.join-summit-btn {
+  max-width: 400px;
+  box-shadow: 0 3px 3px 3px rgba(165, 165, 165, 0.5);
+  font-size: 1.3rem;
+  border-radius: 6px;
+}
+
+.join-summit-btn:hover {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      var(--primary-dark-color) 20%,
+      #6b231b
+    );
+}
+
+.featured-speaker {
+  margin-top: 100px;
+}
+
+.speaker {
+  margin-bottom: 79px;
+}
+
+.speaker-img-wraper,
+.img-frame {
+  max-width: 120px;
+}
+
+.speaker-image {
+  padding-left: 21px;
+}
+
+.img-frame {
+  top: -29px;
+  left: 0;
+}
+
+.speaker-name {
+  font-weight: bold;
+}
+
+.speaker-title {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.speaker-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.more-link {
+  border: 1px solid var(--dark-gray);
+  background-color: var(--body);
+  color: var(--light-black-color);
+  margin-top: 80px;
+  margin-bottom: 50px;
+  display: none;
+}
+
+@media only screen and (max-width: 360px) {
+  .summit-date {
+    font-size: 8vw;
+  }
+
+  .img-and-title h5 {
+    font-size: 6vw;
+  }
+
+  .join-summit-btn,
+  .more-link,
+  .program .title,
+  .more-link i {
+    font-size: 5vw;
+  }
+
+  .speaker-description,
+  .description {
+    font-size: 4vw;
+  }
+
+  .program .title {
+    color: var(--primary-color);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .program .description,
+  .program .title {
+    text-align: left;
+  }
+
+  .program {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    column-gap: 0.5rem;
+  }
+
+  .program .title {
+    min-width: 85px;
+  }
+
+  .more-link {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .featured-speakers {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .speaker-small-hidden {
+    display: block;
+  }
+
+  .more-link {
+    display: none;
+  }
+}

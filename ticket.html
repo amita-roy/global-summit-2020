@@ -4,14 +4,346 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticket</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/common-styles.css" />
+    <link rel="stylesheet" href="styles/ticket.css" />
   </head>
   <body>
+    <header class="ticket-header position-relative">
+      <div class="overlay">
+        <nav class="top-nav">
+          <div
+            class="nav-content d-flex align-items-center justify-content-end h-100 px-4"
+          >
+            <ul class="top-nav-list d-flex align-items-center mb-0">
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook-f facebook"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter twitter"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">English</a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">Main Page</a>
+              </li>
+              <li class="top-nav-list-item text-link">
+                <a href="#" class="text-white">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="main-nav">
+          <div
+            class="nav-content d-flex align-items-center justify-content-between px-4"
+          >
+            <div class="logo">
+              <a href="./home.html">
+                <img
+                  src="./assets/images/footer-logo.png"
+                  alt="logo"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <ul class="main-nav-list d-flex align-items-center mb-0">
+              <li class="main-nav-list-item">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./home.html#program">Program</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./ticket.html" class="text-danger">Join</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./about.html#sponsors">Sponsors</a>
+              </li>
+              <li class="main-nav-list-item"><a href="#">News</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="px-4 py-2 small-nav">
+          <button class="d-block" type="button">
+            <i class="fas fa-bars menu-bar"></i>
+          </button>
+
+          <aside>
+            <ul class="nav-list mb-0">
+              <li class="nav-list-item mb-3">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="./home.html#program">Program</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="./ticket.html " class="text-danger">Join</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="./about.html#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="#">News</a>
+              </li>
+            </ul>
+          </aside>
+        </nav>
+      </div>
+    </header>
+    <main class="container-fluid text-center">
+      <section class="tickets px-3 py-5">
+        <h1 class="ticket-page-heading pb-3">Select Ticket</h1>
+
+        <div class="text-center mt-3">
+          <p class="step-description">
+            <span class="mr-2"><i class="fas fa-circle circle-icon"></i></span>
+            <span class="mr-2">STEP 1</span>
+            Please select the day when you want to join the summit
+          </p>
+        </div>
+
+        <div class="ticket-table mt-5">
+          <div class="ticket-selection">
+            <div class="column-1 text-center">
+              <p>Ticket</p>
+              <p>Date</p>
+              <p>Normal</p>
+              <p>Student</p>
+            </div>
+            <div class="column-2">
+              <p>1-Day-Ticket</p>
+              <p>21.Oct</p>
+              <p class="d-flex flex-column">
+                $250 <input type="radio" class="mt-2" name="normal" />
+              </p>
+              <p class="d-flex flex-column">
+                $100 <input type="radio" class="mt-2" name="for-student" />
+              </p>
+            </div>
+            <div class="column-3">
+              <p>3-Days-Ticket</p>
+              <div class="col3">
+                <div class="col3-left">
+                  <p>21.Oct</p>
+                  <p class="d-flex flex-column">
+                    $250 <input type="radio" class="mt-2" name="normal" />
+                  </p>
+                  <p class="d-flex flex-column">
+                    $100 <input type="radio" class="mt-2" name="for-student" />
+                  </p>
+                </div>
+                <div class="col3-right">
+                  <p>21-23</p>
+                  <p class="d-flex flex-column">
+                    $600 <input type="radio" class="mt-2" name="normal" />
+                  </p>
+                  <p class="d-flex flex-column">
+                    $250 <input type="radio" class="mt-2" name="for-student" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-4">
+              <p>Partners</p>
+              <p>21.Oct</p>
+              <p class="d-flex flex-column">
+                $0 <input type="radio" class="mt-2" name="normal" />
+              </p>
+              <p class="d-flex flex-column">
+                $0 <input type="radio" class="mt-2" name="for-student" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="meal-section position-relative px-3 py-5 d-flex flex-column align-items-center"
+      >
+        <div class="page-divider position-absolute">
+          <img
+            src="./assets/images/page-divider.svg"
+            alt="divider"
+            class="divider"
+          />
+        </div>
+        <h1 class="ticket-page-heading pb-3">Select Your Lunch</h1>
+        <div class="text-center mt-3">
+          <p class="step-description">
+            <span class="mr-2"><i class="fas fa-circle circle-icon"></i></span>
+            <span class="mr-2">STEP 2</span>
+            Please select your lunch for the registered day. There will be no
+            further cost
+          </p>
+        </div>
+
+        <div class="card mt-5">
+          <h5 class="card-header text-center">Day-1</h5>
+          <div class="card-body py-lg-5">
+            <form class="menu">
+              <div class="input">
+                <label for="menu-1" class="mb-0 mr-2">menu 1</label>
+                <input type="radio" name="day-1" id="menu-1" />
+              </div>
+
+              <div class="input">
+                <label for="menu-2" class="mb-0 mr-2">menu 2</label>
+                <input type="radio" name="day-1" id="menu-2" />
+              </div>
+
+              <div class="input">
+                <label for="menu-3" class="mb-0 mr-2">menu 3</label>
+                <input type="radio" name="day-1" id="menu-3" />
+              </div>
+
+              <div class="input">
+                <label for="menu-4" class="mb-0 mr-2">menu 4</label>
+                <input type="radio" name="day-1" id="menu-4" />
+              </div>
+
+              <div class="input">
+                <label for="menu-5" class="mb-0 mr-2">menu 5</label>
+                <input type="radio" name="day-1" id="menu-5" />
+              </div>
+
+              <div class="input">
+                <label for="menu-6" class="mb-0 mr-2">menu 6</label>
+                <input type="radio" name="day-1" id="menu-6" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card mt-5">
+          <h5 class="card-header text-center">Day-2</h5>
+          <div class="card-body py-lg-5">
+            <form class="menu">
+              <div class="input">
+                <label for="day2-menu-1" class="mb-0 mr-2">menu 1</label>
+                <input type="radio" name="day-2" id="day2-menu-1" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-2" class="mb-0 mr-2">menu 2</label>
+                <input type="radio" name="day-2" id="day2-menu-2" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-3" class="mb-0 mr-2">menu 3</label>
+                <input type="radio" name="day-2" id="day2-menu-3" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-4" class="mb-0 mr-2">menu 4</label>
+                <input type="radio" name="day-2" id="day2-menu-4" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-5" class="mb-0 mr-2">menu 5</label>
+                <input type="radio" name="day-2" id="day2-menu-5" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-6" class="mb-0 mr-2">menu 6</label>
+                <input type="radio" name="day-2" id="day2-menu-6" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card mt-5">
+          <h5 class="card-header text-center">Day-3</h5>
+          <div class="card-body py-lg-5">
+            <form class="menu">
+              <div class="input">
+                <label for="day3-menu-1" class="mb-0 mr-2">menu 1</label>
+                <input type="radio" name="day-1" id="day3-menu-1" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-2" class="mb-0 mr-2">menu 2</label>
+                <input type="radio" name="day-1" id="day3-menu-2" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-3" class="mb-0 mr-2">menu 3</label>
+                <input type="radio" name="day-1" id="day3-menu-3" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-4" class="mb-0 mr-2">menu 4</label>
+                <input type="radio" name="day-1" id="day3-menu-4" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-5" class="mb-0 mr-2">menu 5</label>
+                <input type="radio" name="day-1" id="day3-menu-5" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-6" class="mb-0 mr-2">menu 6</label>
+                <input type="radio" name="day-1" id="day3-menu-6" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <button class="selected-option" type="button">Add Selection</button>
+    </main>
+    <footer class="dark-footer py-2">
+      <div class="footer-details flex-column flex-md-row">
+        <div class="footer-logo-wraper">
+          <img
+            src="./assets/images/light-logo.svg"
+            alt="summit-logo"
+            class="footer-logo img-fluid mb-3 mb-md-0"
+          />
+        </div>
+
+        <div class="footer-dark-content">
+          <p class="mb-0 summit-name">
+            Global Summit 2020
+            <span><i class="fas fa-globe-europe ml-2 globe"></i></span>
+          </p>
+          <p class="mb-0 footer-dark-content-description">
+            The Intelligent Community Forum is a global network with a think
+            tank at its center. It connects hundreds of cities and regions on
+            five continents for collaboration on economic development and for
+            exchange of expertise and information that drives progress.
+          </p>
+          <p class="mb-0 footer-dark-content-description1">
+            The Intelligent Community Forum is a global network with a think
+            tank at its center.
+          </p>
+          <small>Some Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

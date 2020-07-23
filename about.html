@@ -5,13 +5,339 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/common-styles.css" />
+    <link rel="stylesheet" href="styles/about.css" />
   </head>
   <body>
+    <header class="position-relative">
+      <div class="overlay">
+        <nav class="top-nav">
+          <div
+            class="nav-content d-flex align-items-center justify-content-end h-100 px-4"
+          >
+            <ul class="top-nav-list d-flex align-items-center mb-0">
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook-f facebook"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter twitter"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">English</a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">Main Page</a>
+              </li>
+              <li class="top-nav-list-item text-link">
+                <a href="#" class="text-white">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="main-nav">
+          <div
+            class="nav-content d-flex align-items-center justify-content-between px-4"
+          >
+            <div class="logo">
+              <a href="./home.html">
+                <img
+                  src="./assets/images/footer-logo.png"
+                  alt="logo"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <ul class="main-nav-list d-flex align-items-center mb-0">
+              <li class="main-nav-list-item">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./about.html" class="text-danger">About</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./home.html#program">Program</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./ticket.html">Join</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="#sponsors">Sponsors</a>
+              </li>
+              <li class="main-nav-list-item"><a href="#">News</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="px-4 py-3 small-nav">
+          <button class="d-block" type="button">
+            <i class="fas fa-bars menu-bar"></i>
+          </button>
+          <aside>
+            <ul class="nav-list mb-0">
+              <li class="nav-list-item mb-3">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="./about.html" class="text-danger">About</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="./home.html#program">Program</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="./ticket.html ">Join</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="./about.html#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a href="#">News</a>
+              </li>
+            </ul>
+          </aside>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container-fluid px-3 py-3 text-center">
+      <span class="tag-line d-flex align-items-center justify-content-center"
+        >"World is changing" <i class="fas fa-globe-europe ml-2 globe"></i
+      ></span>
+      <h1
+        class="mt-2 d-flex flex-column flex-sm-row text-center justify-content-center"
+      >
+        Global Summit <span class="ml-sm-3">2020</span>
+      </h1>
+      <p
+        class="summit-description summit-description1 px-3 py-2 mt-3 mb-1 text-center mx-auto"
+      >
+        The Intelligent Community Forum (ICF) studies and promotes the best
+        practices of the world’s Intelligent Communities as they adapt to the
+        demands and seize the opportunities presented by the digital age. <br />
+        <a href="#">more about summit ...</a>
+      </p>
+      <p
+        class="summit-description summit-description2 px-3 py-2 mt-3 mb-0 text-center mx-auto"
+      >
+        The Intelligent Community Forum (ICF) studies and promotes the best
+        practices of the world’s Intelligent Communities as they adapt to the
+        demands and seize the opportunities presented by the digital age. To
+        help communities grow their economies, societies and cultures, ICF
+        conducts and publishes research, presents workshops, hosts conferences
+        and produces a high-profile international awards program. Over the last
+        20 years, ICF has become an international movement that attracts the
+        attention of global leaders, thinkers and media observers.
+      </p>
+      <div class="right-aligned-text position-absolute">
+        <h3>Global Summit 2020</h3>
+      </div>
+      <div class="about-summit mx-auto">
+        <p>More information about the 2020 Summit will be coming soon.</p>
+        <p>
+          <strong>WHEN:</strong> October 21, 2020 at 9am - October 23, 2020 |
+          Eastern Time (US & Canada)
+        </p>
+        <p>
+          <strong>CONTACT:</strong> Matthew Owen ·
+          mowen@intelligentcommunity.org
+        </p>
+      </div>
+      <div class="ICF-logo-image">
+        <img
+          src="./assets/images/icf-2020-summit-logo-updated.png"
+          alt="ICF-logo and date"
+          class="img-fluid"
+        />
+      </div>
+      <section class="past-summits">
+        <h4 class="pb-2 section-heading">Past Global Summits</h4>
+
+        <div class="summit-2017 d-flex justify-content-between">
+          <div class="video-player mr-md-5">
+            <iframe
+              class="responsive-iframe"
+              src="https://www.youtube.com/embed/3TiNYRSr5eE"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="summit-content text-left">
+            <p>
+              The annual ICF Summit is unlike any municipal, urban planning or
+              economic development conference you attend. You will take away
+              value that translates into direct benefit to the citizens,
+              businesses and institutions you serve.
+            </p>
+            <p>
+              You probably know what a Smart City is. “Smart” is about applying
+              technology to make cities work better, faster and cheaper.
+            </p>
+          </div>
+        </div>
+        <div class="past-summits-list mt-5">
+          <div class="past-summit position-relative">
+            <a href="#">
+              <div class="summit-img">
+                <img
+                  src="./assets/images/summit-2019.jpeg"
+                  alt="summit for 2019"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="summit-detail position-absolute">
+                <p class="summit-year">2019</p>
+                <p class="summit-location">ICF Global Summit in New York</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="past-summit position-relative">
+            <a href="#">
+              <div class="summit-img">
+                <img
+                  src="./assets/images/summit-2018.jpg"
+                  alt="summit for 2018"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="summit-detail position-absolute">
+                <p class="summit-year">2018</p>
+                <p class="summit-location">ICF Global Summit in London</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="past-summit position-relative summit-small-hidden">
+            <a href="#">
+              <div class="summit-img">
+                <img
+                  src="./assets/images/summit-2017.jpg"
+                  alt="summit for 2017"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="summit-detail position-absolute">
+                <p class="summit-year">2017</p>
+                <p class="summit-location">ICF Global Summit in New York</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="past-summit position-relative summit-small-hidden">
+            <a href="#">
+              <div class="summit-img">
+                <img
+                  src="./assets/images/summit-2016.jpg"
+                  alt="summit for 2016"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="summit-detail position-absolute">
+                <p class="summit-year">2016</p>
+                <p class="summit-location">
+                  ICF Global Summit in Toronto
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="sponsors"
+      class="sponsors d-flex flex-column align-items-center justify-content-between mt-5"
+    >
+      <h4 class="pb-2 section-heading text-white mt-3">Partners</h4>
+      <div class="partners my-5">
+        <img src="./assets/images/airbnb.png" alt="airbnb" class="img-fluid" />
+        <img src="./assets/images/google.png" alt="google" class="img-fluid" />
+        <img
+          src="./assets/images/mozilla.png"
+          alt="mozilla"
+          class="img-fluid"
+        />
+        <img src="./assets/images/naver.png" alt="navar" class="img-fluid" />
+        <img src="./assets/images/duckoo.png" alt="partner" class="img-fluid" />
+      </div>
+    </div>
+
+    <footer class="footer-light">
+      <div class="footer-details">
+        <div class="footer-logo-wraper">
+          <img
+            src="./assets/images/footer-logo.png"
+            alt="summit-logo"
+            class="footer-logo img-fluid"
+          />
+        </div>
+
+        <div class="footer-content">
+          <p class="mb-0 summit-name">
+            Global Summit 2020
+            <span><i class="fas fa-globe-europe ml-2 globe"></i></span>
+          </p>
+          <small class="text-dark">Some Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="dark-footer py-2 about-dark-footer">
+      <div class="footer-details flex-column flex-md-row">
+        <div class="footer-logo-wraper">
+          <img
+            src="./assets/images/light-logo.svg"
+            alt="summit-logo"
+            class="footer-logo img-fluid mb-3 mb-md-0"
+          />
+        </div>
+
+        <div class="footer-dark-content">
+          <p class="mb-0 summit-name">
+            Global Summit 2020
+            <span><i class="fas fa-globe-europe ml-2 globe"></i></span>
+          </p>
+          <p class="mb-0 footer-dark-content-description">
+            The Intelligent Community Forum is a global network with a think
+            tank at its center. It connects hundreds of cities and regions on
+            five continents for collaboration on economic development and for
+            exchange of expertise and information that drives progress.
+          </p>
+          <small>Some Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

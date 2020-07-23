@@ -3,17 +3,446 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Global Summit</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/home.css" />
+
+    <link rel="stylesheet" href="styles/common-styles.css" />
   </head>
   <body>
-    <h1>Hello There</h1>
+    <header class="position-relative">
+      <div class="overlay">
+        <nav class="top-nav">
+          <div
+            class="nav-content d-flex align-items-center justify-content-end h-100 px-4"
+          >
+            <ul class="top-nav-list d-flex align-items-center mb-0">
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook-f facebook"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter twitter"></i
+                ></a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">English</a>
+              </li>
+              <li class="top-nav-list-item mr-3 text-link">
+                <a href="#" class="text-white">Main Page</a>
+              </li>
+              <li class="top-nav-list-item text-link">
+                <a href="#" class="text-white">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="main-nav">
+          <div
+            class="nav-content d-flex align-items-center justify-content-between px-4"
+          >
+            <div class="logo">
+              <a href="./home.html">
+                <img
+                  src="./assets/images/footer-logo.png"
+                  alt="logo"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <ul class="main-nav-list d-flex align-items-center mb-0">
+              <li class="main-nav-list-item">
+                <a href="./home.html" class="text-danger">Home</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="main-nav-list-item"><a href="#program">Program</a></li>
+              <li class="main-nav-list-item">
+                <a href="./ticket.html">Join</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a href="./about.html#sponsors">Sponsors</a>
+              </li>
+              <li class="main-nav-list-item">
+                <a
+                  href="https://www.intelligentcommunity.org/tags/news_coverage"
+                  >News</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="px-4 py-3 small-nav">
+          <button class="d-block" type="button">
+            <i class="fas fa-bars menu-bar"></i>
+          </button>
+          <aside>
+            <ul class="nav-list mb-0">
+              <li class="nav-list-item mb-3">
+                <a href="./home.html" class="text-danger">Home</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="./about.html">About</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="#program">Program</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="./ticket.html ">Join</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="./about.html#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-list-item mb-3">
+                <a class="text-white" href="#">News</a>
+              </li>
+            </ul>
+          </aside>
+        </nav>
+      </div>
+    </header>
+    <main class="container-fluid px-3 py-3">
+      <span class="tag-line d-flex align-items-center"
+        >"World is changing" <i class="fas fa-globe-europe ml-2 globe"></i
+      ></span>
+      <h1 class="mt-2 d-flex flex-column flex-sm-row">
+        Global Summit <span class="ml-sm-3">2020</span>
+      </h1>
+      <p class="summit-description summit-description1  px-3 py-2 mt-3 mb-1">
+        The Intelligent Community Forum (ICF) studies and promotes the best
+        practices of the world’s Intelligent Communities as they adapt to the
+        demands and seize the opportunities presented by the digital age. <br />
+        <a href="#">more about summit ...</a>
+      </p>
+      <p class="summit-description summit-description2 d-md-block px-3 py-2 mt-3 mb-0">
+        The Intelligent Community Forum (ICF) studies and promotes the best
+        practices of the world’s Intelligent Communities as they adapt to the
+        demands and seize the opportunities presented by the digital age. To
+        help communities grow their economies, societies and cultures, ICF
+        conducts and publishes research, presents workshops, hosts conferences
+        and produces a high-profile international awards program. Over the last
+        20 years, ICF has become an international movement that attracts the
+        attention of global leaders, thinkers and media observers.
+      </p>
+      <p class="summit-date">OCT 21-23 | DUBLIN, OH</p>
+      <div class="right-aligned-text position-absolute">
+        <h3>Global Summit 2020</h3>
+      </div>
+
+      <section id="program" class="main-program text-center mt-5">
+        <h4 class="pb-2 section-heading">Main Program</h4>
+
+        <div class="programs d-flex flex-column flex-md-row my-5">
+          <div
+            class="program d-flex flex-md-column align-items-center mr-md-2 mb-2 mb-md-0"
+          >
+            <div class="mr-1 mr-md-0">
+              <img
+                src="./assets//images/conference_(1).svg"
+                alt="conference"
+                class="img-fuid program-card-logo"
+              />
+            </div>
+            <p class="title mt-md-3 mr-2 mb-0 mr-md-0">Lecture</p>
+            <p class="description mb-0">
+              The biggest things in the world started small. World started
+              small.
+            </p>
+          </div>
+
+          <div
+            class="program d-flex flex-md-column align-items-center mr-md-2 mb-2 mb-md-0"
+          >
+            <div class="mr-1 mr-md-0">
+              <img
+                src="./assets/images/museum.svg"
+                alt=""
+                class="img-fuid program-card-logo"
+              />
+            </div>
+            <p class="title mt-md-3 mr-2 mb-0 mr-md-0">Exhibition</p>
+            <p class="description mb-0">
+              The biggest things in the world started small. World started
+              small.
+            </p>
+          </div>
+
+          <div
+            class="program d-flex flex-md-column align-items-center mr-md-2 mb-2 mb-md-0"
+          >
+            <div class="mr-1 mr-md-0">
+              <i class="far fa-comments forum-icon"></i>
+            </div>
+            <p class="title mt-md-3 mr-2 mb-0 mr-md-0">Forum</p>
+            <p class="description mb-0">
+              The biggest things in the world started small. World started
+              small.
+            </p>
+          </div>
+
+          <div
+            class="program d-flex flex-md-column align-items-center mr-md-2 mb-2 mb-md-0"
+          >
+            <div class="mr-1 mr-md-0">
+              <img
+                src="./assets/images/workshop.svg"
+                alt=""
+                class="img-fuid program-card-logo"
+              />
+            </div>
+            <p class="title mt-md-3 mr-2 mb-0 mr-md-0">Workshop</p>
+            <p class="description mb-0">
+              The biggest things in the world started small. World started
+              small.
+            </p>
+          </div>
+
+          <div class="program d-flex flex-md-column align-items-center">
+            <div class="mr-1 mr-md-0">
+              <img
+                src="./assets/images/distribution.svg"
+                alt=""
+                class="img-fuid program-card-logo"
+              />
+            </div>
+            <p class="title mt-md-3 mr-2 mb-0 mr-md-0">GS Ignite</p>
+            <p class="description mb-0">
+              The biggest things in the world started small. World started
+              small.
+            </p>
+          </div>
+        </div>
+
+        <button class="join-summit-btn p-2 mt-3 mx-auto w-100" type="button">
+          Join Global Summit 2020
+        </button>
+      </section>
+
+      <section class="featured-speaker text-center">
+        <h4 class="pb-2 section-heading speaker-section-heading">
+          Featured Speakers
+        </h4>
+        <div class="featured-speakers mt-5">
+          <div class="speaker position-relative">
+            <div class="speaker-img-wraper float-left mr-4">
+              <img
+                src="https://d3n8a8pro7vhmx.cloudfront.net/icf/pages/1155/attachments/original/1517434966/JohnJung.jpg?1517434966"
+                alt="John G. Jung"
+                class="img-fluid speaker-image"
+              />
+              <img
+                src="./assets//images/Image-frame.svg"
+                alt="img-frame"
+                class="position-absolute img-fluid img-frame"
+              />
+            </div>
+            <div class="speaker-details text-left float-none">
+              <h5 class="speaker-name">John G. Jung</h5>
+              <h6 class="speaker-title">
+                Co-Founder, Intelligent Community Forum (Moderator)
+              </h6>
+              <p class="speaker-description">
+                ICF co-founder John G. Jung originated the Intelligent Community
+                concept and continues to serve as the Forum's leading visionary.
+              </p>
+            </div>
+          </div>
+          <div class="speaker position-relative">
+            <div class="speaker-img-wraper float-left mr-4">
+              <img
+                src="https://d3n8a8pro7vhmx.cloudfront.net/icf/pages/1726/attachments/original/1590009540/Crandall.jpg?1590009540"
+                alt="Michelle Crandall"
+                class="img-fluid speaker-image"
+              />
+              <img
+                src="./assets//images/Image-frame.svg"
+                alt="img-frame"
+                class="position-absolute img-fluid img-frame"
+              />
+            </div>
+            <div class="speaker-details text-left float-none">
+              <h5 class="speaker-name">Michelle Crandall</h5>
+              <h6 class="speaker-title">
+                City Manager, City of Hilliard, Ohio, USA
+              </h6>
+              <p class="speaker-description">
+                City managers from two small cities take listeners inside the
+                start-up of a successful innovation program and its translation
+                into a program at another city in the region.
+              </p>
+            </div>
+          </div>
+
+          <div class="speaker speaker-small-hidden position-relative">
+            <div class="speaker-img-wraper float-left mr-4">
+              <img
+                src="https://d3n8a8pro7vhmx.cloudfront.net/icf/pages/1155/attachments/original/1517434967/LouZacharilla.jpg?1517434967"
+                alt="Louis Zacharilla"
+                class="img-fluid speaker-image"
+              />
+              <img
+                src="./assets//images/Image-frame.svg"
+                alt="img-frame"
+                class="position-absolute img-fluid img-frame"
+              />
+            </div>
+            <div class="speaker-details text-left float-none">
+              <h5 class="speaker-name">Louis Zacharilla</h5>
+              <h6 class="speaker-title">
+                Co-Founder, Intelligent Community Forum
+              </h6>
+              <p class="speaker-description">
+                Louis Zacharilla helped found the Intelligent Community
+                movement. He is the developer of the Top Seven and Intelligent
+                Community of the Year Awards programs.
+              </p>
+            </div>
+          </div>
+
+          <div class="speaker speaker-small-hidden position-relative">
+            <div class="speaker-img-wraper float-left mr-4">
+              <img
+                src="./assets/images/Robert_Bell.jpg"
+                alt="Louis Zacharilla"
+                class="img-fluid speaker-image"
+              />
+              <img
+                src="./assets//images/Image-frame.svg"
+                alt="img-frame"
+                class="position-absolute img-fluid img-frame"
+              />
+            </div>
+            <div class="speaker-details text-left float-none">
+              <h5 class="speaker-name">Robert Bell</h5>
+              <h6 class="speaker-title">
+                Co-Founder, Intelligent Community Forum
+              </h6>
+              <p class="speaker-description">
+                Robert Bell is co-founder of the Intelligent Community Forum,
+                where he heads its research, analysis and content development
+                activities.
+              </p>
+            </div>
+          </div>
+
+          <div class="speaker speaker-small-hidden position-relative">
+            <div class="speaker-img-wraper float-left mr-4">
+              <img
+                src="./assets/images/Faith_Knutsen.jpeg"
+                alt="Faith Knutsen"
+                class="img-fluid speaker-image"
+              />
+              <img
+                src="./assets//images/Image-frame.svg"
+                alt="img-frame"
+                class="position-absolute img-fluid img-frame"
+              />
+            </div>
+            <div class="speaker-details text-left float-none">
+              <h5 class="speaker-name">Faith Knutsen</h5>
+              <h6 class="speaker-title">
+                Director, Social Innovation and Entrepreneurship, Ohio
+                University
+              </h6>
+              <p class="speaker-description">
+                Faith Knutsen has served the Voinovich School since 2008. Faith
+                directs the Social Enterprise Ecosystem (SEE) project, funded by
+                the Appalachian Regional Commission.
+              </p>
+            </div>
+          </div>
+
+          <div class="speaker speaker-small-hidden position-relative">
+            <div class="speaker-img-wraper float-left mr-4">
+              <img
+                src="./assets/images/Craig_Chambers.jpg"
+                alt="Craig Chambers"
+                class="img-fluid speaker-image"
+              />
+              <img
+                src="./assets//images/Image-frame.svg"
+                alt="img-frame"
+                class="position-absolute img-fluid img-frame"
+              />
+            </div>
+            <div class="speaker-details text-left float-none">
+              <h5 class="speaker-name">Craig Chambers</h5>
+              <h6 class="speaker-title">
+                Instructor, Voinovich Academy, Ohio University
+              </h6>
+              <p class="speaker-description">
+                Craig Chambers develops and delivers executive education for
+                emerging public sector leaders in innovation management and
+                smart government.
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="more-link p-2 w-100 align-items-center justify-content-center mx-auto"
+          >
+            More <span><i class="fas fa-chevron-down ml-2"></i></span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="sponsors"
+      class="sponsors d-flex flex-column align-items-center justify-content-between"
+    >
+      <h4 class="pb-2 section-heading text-white mt-3">Partners</h4>
+      <div class="partners my-5">
+        <img src="./assets/images/airbnb.png" alt="airbnb" class="img-fluid">
+        <img src="./assets/images/google.png" alt="google" class="img-fluid">
+        <img src="./assets/images/mozilla.png" alt="mozilla" class="img-fluid">
+        <img src="./assets/images/naver.png" alt="navar" class="img-fluid">
+        <img src="./assets/images/duckoo.png" alt="partner" class="img-fluid">
+      </div>
+    </div>
+    <footer>
+      <div class="footer-details">
+        <div class="footer-logo-wraper">
+          <img
+            src="./assets/images/footer-logo.png"
+            alt="summit-logo"
+            class="footer-logo img-fluid"
+          />
+        </div>
+
+        <div class="footer-content">
+          <p class="mb-0 summit-name">
+            Global Summit 2020
+            <span><i class="fas fa-globe-europe ml-2 globe"></i></span>
+          </p>
+          <small>Some Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

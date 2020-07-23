@@ -1,0 +1,365 @@
+:root {
+  --primary-color: #ec5242;
+  --primary-light-color: #f86c5d;
+  --primary-dark-color: #9b3429;
+  --black-color: #272a31;
+  --light-black-color: #444;
+  --dark-gray: #666565;
+  --light-gray: #d3d3d3;
+  --white-color: #fff;
+  --body: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+body,
+.main-nav,
+footer {
+  background-color: var(--body);
+}
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
+}
+
+h1,
+h3,
+.footer-content .summit-name,
+.footer-dark-content .summit-name,
+.summit-year {
+  font-family: Cocogoose, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h3 {
+  background:
+    repeating-linear-gradient(
+      45deg,
+      var(--primary-color),
+      var(--primary-dark-color) 10%
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+header {
+  background-image: url(../assets/images/header_background.jpg);
+  opacity: 0.8;
+  background-position: 40% 65%;
+  height: 400px;
+}
+
+.overlay {
+  height: 100%;
+  background-color: rgba(247, 247, 247, 0.8);
+}
+
+.top-nav {
+  height: 30px;
+}
+
+.top-nav,
+aside,
+.dark-footer {
+  background-color: var(--black-color);
+}
+
+.twitter:hover {
+  color: #37a1f2;
+}
+
+.facebook:hover {
+  color: #3a5997;
+}
+
+.main-nav {
+  height: 70px;
+  box-shadow: 0 3px 4px 3px rgba(155, 155, 155, 0.5);
+}
+
+.main-nav,
+.top-nav {
+  display: none;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+.small-nav {
+  height: 100%;
+  display: block;
+}
+
+.small-nav button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+aside {
+  position: absolute;
+  width: 180px;
+  min-height: 300px;
+  top: 60px;
+  left: 0;
+  transform: translateX(-260px);
+  transition: transform 0.5s ease-in;
+  z-index: 999;
+}
+
+aside,
+.footer-details {
+  padding: 15px;
+}
+
+.main-nav-list-item a {
+  color: var(--black-color);
+}
+
+aside .nav-list-item a,
+.dark-footer {
+  color: var(--white-color);
+}
+
+.summit-description2 {
+  display: none;
+}
+
+.footer-content .summit-name,
+.main-nav-list-item a:hover {
+  color: var(--primary-color);
+}
+
+aside .nav-list-item a:hover {
+  text-decoration: underline;
+}
+
+.small-nav button:focus ~ aside {
+  transform: translateX(0);
+}
+
+.nav-content {
+  height: 100%;
+}
+
+.nav-content,
+main,
+.partners,
+.footer-details {
+  max-width: 1350px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.nav-content,
+main,
+footer,
+.footer-details {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-nav-list-item:not(:last-of-type) {
+  margin-right: 4rem;
+}
+
+.menu-bar {
+  font-size: 2.7rem;
+  color: var(--black-color);
+}
+
+.tag-line {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: var(--primary-light-color);
+}
+
+.tag-line,
+.footer-dark-content-description {
+  font-weight: 300;
+}
+
+.globe {
+  cursor: pointer;
+}
+
+.globe:hover {
+  transform: rotate(360deg);
+  transition: transform 2s ease;
+}
+
+.summit-description {
+  line-height: 2rem;
+  max-width: 800px;
+  border: 4px double var(--primary-light-color);
+  border-radius: 6px;
+  color: var(--black-color);
+  font-weight: 400;
+}
+
+.right-aligned-text {
+  top: 550px;
+  right: -224px;
+  transform: rotate(90deg);
+  opacity: 0.4;
+  display: none;
+}
+
+.right-aligned-text h3 {
+  font-size: 3vw;
+  letter-spacing: 10px;
+}
+
+.section-heading {
+  color: var(--black-color);
+  border-bottom: 4px double var(--primary-color);
+  display: inline-block;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  max-width: 100px;
+  margin-right: 2rem;
+  height: auto;
+}
+
+.footer-content .summit-name,
+.footer-dark-content .summit-name {
+  font-size: 1.8rem;
+}
+
+.footer-content small {
+  color: var(--light-black-color);
+}
+
+.footer-dark-content small {
+  color: var(--light-gray);
+  letter-spacing: 1.5px;
+}
+
+.footer-dark-content-description {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.sponsors {
+  margin-bottom: 80px;
+  background-color: #414246;
+}
+
+.about-dark-footer {
+  display: none;
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 10vw;
+  }
+
+  .tag-line {
+    font-size: 6vw;
+  }
+
+  .summit-description {
+    font-size: 5vw;
+  }
+
+  .section-heading {
+    font-size: 7vw;
+  }
+
+  .sponsors {
+    margin-bottom: 60px;
+  }
+
+  .footer-dark-content-description,
+  footer small {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 146px;
+  }
+
+  .footer-content .summit-name,
+  .footer-dark-content .summit-name {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .top-nav,
+  .main-nav {
+    display: block;
+  }
+
+  .small-nav {
+    display: none;
+  }
+
+  .footer-dark-content-description {
+    display: block;
+  }
+
+  .footer-dark-content-description1 {
+    display: none;
+  }
+
+  .summit-description1 {
+    display: none;
+  }
+
+  .summit-description2 {
+    display: block;
+  }
+
+  .footer-light {
+    display: none;
+  }
+
+  .about-dark-footer {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 985px) {
+  .partners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 985px) {
+  .right-aligned-text {
+    display: block;
+  }
+}
