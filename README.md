@@ -2,7 +2,7 @@
 
 > This project is a website for the ICF Global Conference taking place in Dublin, Ohio, USA in October 2020.
 
-![screenshot](assets/images/Global-summit-2020.png)
+![screenshot](assets/images/global-summit-2020.png)
 
 I was given [this design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) of [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)'s to follow, mirroring its structure, typography and colors as I built my own conference website.
 
