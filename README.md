@@ -6,6 +6,18 @@
 
 I was given [this design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) of [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)'s to follow, mirroring its structure, typography and colors as I built my own conference website.
 
+> I am using logo and content from [this](https://www.intelligentcommunity.org) website. I have 2 version for my footer (dark and light). For the dark footer, I wasn't able to integrate the original logo as it has dark color  so I created the my own logo for dark footer.
+
+![screenshot](assets/images/light-logo.svg)
+
+> For speaker images, I have created my own frame.
+
+![screenshot](assets/images/Image-frame.svg)
+
+> On the Ticket page, there is a page divider on the original design, so I created that divider from scratch instead of taking the screenshot from the design. Now the divider is a scaleable vector graphic.
+
+![screenshot](assets/images/page-divider.svg)
+
 
 ## Video Presentation
 
@@ -18,6 +30,7 @@ Watch my video [presentation](https://www.loom.com/share/b500106067f94b6fb236ab3
 - CSS
 - fontawesome
 - npm
+- Adobe XD (for logo, image frame and page divider)
 - Google Fonts (Lato)
 - Stylelint, Webhint, Lighthouse
 - VSCode (with Prettier, Stylelint)
