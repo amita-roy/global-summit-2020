@@ -52,11 +52,12 @@
   border: none;
   font-size: 1.3rem;
   color: var(--white-color);
-  background-image: linear-gradient(
-    to right bottom,
-    var(--primary-color),
-    var(--primary-dark-color)
-  );
+  background-image:
+    linear-gradient(
+      to right bottom,
+      var(--primary-color),
+      var(--primary-dark-color)
+    );
   max-width: 400px;
   box-shadow: 0 3px 3px 3px rgba(165, 165, 165, 0.5);
 }
@@ -74,11 +75,12 @@
 }
 
 .join-summit-btn:hover {
-  background-image: linear-gradient(
-    to right bottom,
-    var(--primary-dark-color) 20%,
-    #6b231b
-  );
+  background-image:
+    linear-gradient(
+      to right bottom,
+      var(--primary-dark-color) 20%,
+      #6b231b
+    );
 }
 
 .featured-speaker {

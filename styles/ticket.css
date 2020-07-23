@@ -4,10 +4,14 @@
 
 .ticket-page-heading {
   font-family: Lato, Arial, Helvetica, sans-serif;
-  color: var(--light-black-color);
   font-size: 1.8rem;
   text-align: center;
   margin-top: 40px;
+}
+
+.ticket-page-heading,
+.input {
+  color: var(--light-black-color);
 }
 
 .step-description {
@@ -23,21 +27,26 @@
 
 .ticket-table {
   height: 250px;
-  max-width: 800px;
-  margin: 0 auto;
-  background-image: repeating-linear-gradient(
-    135deg,
-    red,
-    red 1%,
-    white 1%,
-    white 2%,
-    rgb(0, 0, 109) 2%,
-    rgb(0, 0, 109) 3%,
-    white 3%,
-    white 4%
-  );
+  max-width: 1000px;
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      red,
+      red 1%,
+      white 1%,
+      white 2%,
+      rgb(0, 0, 109) 2%,
+      rgb(0, 0, 109) 3%,
+      white 3%,
+      white 4%
+    );
   padding: 7px;
   position: relative;
+}
+
+.ticket-table,
+.menu {
+  margin: 0 auto;
 }
 
 .ticket-table::after {
@@ -54,24 +63,44 @@
 
 .ticket-selection {
   height: 100%;
-  width: 100%;
   background-color: var(--body);
-  display: grid;
-  grid-template-columns: repeat(2, 2fr) 3fr 2fr;
+  grid-template-columns: 1fr 2fr 3fr 2fr;
   z-index: 999;
+}
+
+.ticket-selection,
+.card,
+.selected-option,
+.divider {
+  width: 100%;
+}
+
+.ticket-selection,
+.column-1,
+.column-2,
+.column-3,
+.column-3 .col3,
+.col3-left,
+.col3-right,
+.column-4,
+.menu {
+  display: grid;
 }
 
 .column-1,
 .column-2,
 .column-4 {
-  display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr) repeat(2, 2fr);
 }
 
-.column-3 {
-  display: grid;
+.column-1,
+.column-2,
+.column-3,
+.column-4 {
   grid-template-columns: 1fr;
+}
+
+.column-3 {
   grid-template-rows: 1fr 5fr;
 }
 
@@ -84,30 +113,94 @@
 
 .ticket-selection p {
   margin-bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-bottom: 1px solid lightgrey;
 }
 
+.input,
+.ticket-selection p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .column-3 .col3 {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .col3-left,
 .col3-right {
-  display: grid;
   grid-template-rows: 1fr repeat(2, 2fr);
 }
 
-@media only screen and (max-width: 360px) {
+.meal-section {
+  background-color: #fefefe;
+  margin-top: 85px;
+}
+
+.page-divider {
+  top: -33px;
+}
+
+.divider {
+  max-width: 65px;
+}
+
+.card {
+  max-width: 1000px;
+}
+
+.menu {
+  width: 90%;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.input {
+  font-size: 1.2rem;
+}
+
+.selected-option {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--primary-color);
+  font-size: 1.3rem;
+  color: var(--white-color);
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 359px) {
   .meal-selection-btn,
-  .list-group-item {
+  .list-group-item,
+  .ticket-selection p {
     font-size: 5vw;
   }
 
-  .ticket-selection p {
+  .selected-option {
+    font-size: 6vw;
+  }
+
+  .ticket-page-heading {
+    font-size: 8vw;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .input {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 360px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .input {
     font-size: 5vw;
   }
 }
@@ -119,6 +212,13 @@
   }
 
   .ticket-selection p {
-    font-size: 3.4vw;
+    font-size: 3.2vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 450px) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
   }
 }

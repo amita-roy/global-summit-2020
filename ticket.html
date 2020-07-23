@@ -110,8 +110,8 @@
         </nav>
       </div>
     </header>
-    <main class="container-fluid px-3 py-5">
-      <section class="tickets">
+    <main class="container-fluid text-center">
+      <section class="tickets px-3 py-5">
         <h1 class="ticket-page-heading pb-3">Select Ticket</h1>
 
         <div class="text-center mt-3">
@@ -177,7 +177,16 @@
         </div>
       </section>
 
-      <section class="meal-section">
+      <section
+        class="meal-section position-relative px-3 py-5 d-flex flex-column align-items-center"
+      >
+        <div class="page-divider position-absolute">
+          <img
+            src="./assets/images/page-divider.svg"
+            alt="divider"
+            class="divider"
+          />
+        </div>
         <h1 class="ticket-page-heading pb-3">Select Your Lunch</h1>
         <div class="text-center mt-3">
           <p class="step-description">
@@ -187,7 +196,119 @@
             further cost
           </p>
         </div>
+
+        <div class="card mt-5">
+          <h5 class="card-header text-center">Day-1</h5>
+          <div class="card-body py-lg-5">
+            <form class="menu">
+              <div class="input">
+                <label for="menu-1" class="mb-0 mr-2">menu 1</label>
+                <input type="radio" name="day-1" id="menu-1" />
+              </div>
+
+              <div class="input">
+                <label for="menu-2" class="mb-0 mr-2">menu 2</label>
+                <input type="radio" name="day-1" id="menu-2" />
+              </div>
+
+              <div class="input">
+                <label for="menu-3" class="mb-0 mr-2">menu 3</label>
+                <input type="radio" name="day-1" id="menu-3" />
+              </div>
+
+              <div class="input">
+                <label for="menu-4" class="mb-0 mr-2">menu 4</label>
+                <input type="radio" name="day-1" id="menu-4" />
+              </div>
+
+              <div class="input">
+                <label for="menu-5" class="mb-0 mr-2">menu 5</label>
+                <input type="radio" name="day-1" id="menu-5" />
+              </div>
+
+              <div class="input">
+                <label for="menu-6" class="mb-0 mr-2">menu 6</label>
+                <input type="radio" name="day-1" id="menu-6" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card mt-5">
+          <h5 class="card-header text-center">Day-2</h5>
+          <div class="card-body py-lg-5">
+            <form class="menu">
+              <div class="input">
+                <label for="day2-menu-1" class="mb-0 mr-2">menu 1</label>
+                <input type="radio" name="day-2" id="day2-menu-1" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-2" class="mb-0 mr-2">menu 2</label>
+                <input type="radio" name="day-2" id="day2-menu-2" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-3" class="mb-0 mr-2">menu 3</label>
+                <input type="radio" name="day-2" id="day2-menu-3" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-4" class="mb-0 mr-2">menu 4</label>
+                <input type="radio" name="day-2" id="day2-menu-4" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-5" class="mb-0 mr-2">menu 5</label>
+                <input type="radio" name="day-2" id="day2-menu-5" />
+              </div>
+
+              <div class="input">
+                <label for="day2-menu-6" class="mb-0 mr-2">menu 6</label>
+                <input type="radio" name="day-2" id="day2-menu-6" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card mt-5">
+          <h5 class="card-header text-center">Day-3</h5>
+          <div class="card-body py-lg-5">
+            <form class="menu">
+              <div class="input">
+                <label for="day3-menu-1" class="mb-0 mr-2">menu 1</label>
+                <input type="radio" name="day-1" id="day3-menu-1" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-2" class="mb-0 mr-2">menu 2</label>
+                <input type="radio" name="day-1" id="day3-menu-2" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-3" class="mb-0 mr-2">menu 3</label>
+                <input type="radio" name="day-1" id="day3-menu-3" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-4" class="mb-0 mr-2">menu 4</label>
+                <input type="radio" name="day-1" id="day3-menu-4" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-5" class="mb-0 mr-2">menu 5</label>
+                <input type="radio" name="day-1" id="day3-menu-5" />
+              </div>
+
+              <div class="input">
+                <label for="day3-menu-6" class="mb-0 mr-2">menu 6</label>
+                <input type="radio" name="day-1" id="day3-menu-6" />
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
+      <button class="selected-option">Add Selection</button>
     </main>
     <footer class="dark-footer py-2">
       <div class="footer-details flex-column flex-md-row">
